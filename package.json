@@ -1,0 +1,22 @@
+{
+  "name": "sassmaster",
+  "version": "1.0.0",
+  "description": "project to learn sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Susan Rehl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "pg": "^6.1.0"
+  }
+}
