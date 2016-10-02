@@ -17,3 +17,10 @@ a {
 .container-fluid {
   width: 90%;
 }
+
+/* Styles for tablet */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1em;
+  }
+}
