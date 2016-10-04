@@ -1,0 +1,92 @@
+Scope of Work for Susan's Website:
+
+(An organizational aid!)
+
+1. Home Page
+
+   A. Header
+        - Title "Susan's Adventures"
+        - Email link
+        - Blog link
+        - Travel link
+        - Art link
+        - DIY link
+        - Cats link
+
+   B. Section 1: Introduction
+       - Photo of Susan with name
+       - Introductory copy about the site
+       - Modal popup with brief copy about Susan
+       - Button with link to Blog
+            + External blog hosted on separate page
+
+   C. Section 2: Coding Adventures
+       - Links to projects hosted on Heroku
+       - Link to Github repo
+
+   D. Section 3: Travel Adventures
+       - Intro copy about my travel photography
+       - Button links to places:
+             + Rome
+             + Siena
+             + Florence
+             + Grand Canyon
+             + Cascade Mountains, WA
+             + NYC
+             + Estes Park/Rocky Mountain National Park, CO
+             + Tampa, FL
+             + Wisconsin
+             + North Shore, MN
+       - Button will direct user to new page with carousel of photos and comments,
+          populated with the photos and comments chosen.
+       - Photos and copy will reside in a database.
+       - Page will also display buttons for the other places.
+
+    E. Section 4: Adventures in Art
+       - Intro copy about my artwork
+       - Button links to art themes:
+             + nature
+             + ?? need to flesh out.
+       - Button will direct user to new page with carousel of artwork images and comments,
+          populated with the images chosen.
+       - Images and copy will reside in a database.
+       - Page will also display buttons for the other art themes.
+
+    F. Section 5: Adventures in DIY
+       - Intro copy
+       - Photo links for specific projects:
+            + Refinished and repainted box
+            + Repainted lamp and shade
+            + Repurposed desk into bedroom end cabinet
+       - Button will direct user to new page with carousel of project images (before and after) and comments,
+               populated with the images chosen.
+       - Photos and copy will reside in a database.
+       - Page will also display image links for the other projects.
+
+    G. Section 6: Adventures with Cats
+       - Intro copy
+       - Left column (top in mobile): images of one of my cats with link to view cats.
+             + Directs viewer to separate page with a carousel of cat pictures and comments
+             + Includes a back button to take viewer back to Adventures with Cats
+       - Right column (bottom in mobile): Observations subhead with button links:
+             + Getting a cat
+             + Cat harmony (multiple cats)
+             + Feeling the cat love
+             + Cat play
+             + Litter box issues
+             + Displaced aggression
+
+2. Other Pages:
+  Blog
+  Travel Photos
+  Art
+  DIY Projects
+  Cats
+
+3. Technologies:
+  Javascript, AngularJS, HTML5, CSS3, Bootstrap, SASS, PostgreSQL database
+  Blog: not sure yet
+  Plan to host on AWS - need to research that.
+
+4. Other options:
+  Possibly add a section on Nature Photography which could include dahlias, woodlands, desert, seascapes.
