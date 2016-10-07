@@ -30,7 +30,7 @@ app.get( '/travel', function( req, res ){  // makes view.html available
     });
 
 app.get( '/diy', function( req, res ){  // makes view.html available
-      res.sendFile( path.resolve( 'views/diyprojects.html' ) );
+      res.sendFile( path.resolve( 'views/diy.html' ) );
       });
 
 app.get( '/cats', function( req, res ){  // makes view.html available

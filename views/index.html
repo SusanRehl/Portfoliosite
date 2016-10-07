@@ -13,54 +13,63 @@
     <title>Susan Rehl's Site</title>
   </head>
   <body>
-    <div class = "container-fluid">
+
+      <div ng-controller = "viewController">
+
         <div ng-include="'partials/navbar.html'"></div>
-      <div class="intro">
-        <h2> Hi, I'm Susan Rehl</h2>
-        <p>Welcome to my site, where I apply new code technologies that I am learning to my many interests and hobbies. I hope you find something interesting!</p>
-        <a href="/blog" class="button btn"><p>My Blog</p></a>
-      </div>  <!-- end intro section-->
 
-    <div class="travel">
-      <div class="row">
-          <div class="col-md-4">
-            <p>Florence, Italy</p>
+        <div class = "container-fluid">
+
+        <div class="intro">
+          <h2> Hi, I'm Susan Rehl</h2>
+          <p>Welcome to my site, where I apply new code technologies that I am learning to my many interests and hobbies. I hope you find something interesting!</p>
+          <a href="/blog" class="button btn"><p>My Blog</p></a>
+        </div>  <!-- end intro section-->
+
+        <div class="travel">
+          <div class="row">
+              <div class="col-md-4">
+                <p>Florence, Italy</p>
+              </div>
+              <div class="col-md-4">
+                <p>Siena, Italy</p>
+              </div>
+              <div class="col-md-4">
+                <p>Rome, Italy</p>
+              </div>
           </div>
-          <div class="col-md-4">
-            <p>Siena, Italy</p>
-          </div>
-          <div class="col-md-4">
-            <p>Rome, Italy</p>
-          </div>
-      </div>
-    </div> <!-- end travel section-->
+        </div> <!-- end travel section-->
 
-    <div class="artwork">
-      <p>Paintings</p>
-    </div>
+        <div class="artwork">
+          <p>Paintings</p>
+        </div>
 
-    <div class="naturephotos">
-      <p>Nature Photography</p>
-    </div>
+        <div class="naturephotos">
+          <p>Nature Photography</p>
+        </div>
 
-    <div class="diy">
-      <p>DIY Projects</p>
-    </div>
+        <div class="diy">
+          <p>DIY Projects</p>
+        </div>
 
-    <div class="cats">
-      <p>Cats</p>
-    </div>
+        <div class="cats">
+          <p>Cats</p>
+        </div>
 
-    <div class="footer">
-      <div class="row">
-          <div class="col-md-2">
-            <p>&#169;	2016 Susan Rehl</p>
-          </div>
-          <div class="col-md-10">
-            <p>Thanks for visiting my site!</p>
-          </div>
-      </div><!--end row-->
-    </div><!--end footer-->
+        <div class="footer">
+          <div class="row">
+              <div class="col-md-2">
+                <p>&#169;	2016 Susan Rehl</p>
+              </div>
+              <div class="col-md-10">
+                <p>Thanks for visiting my site!</p>
+              </div>
+           </div><!--end row-->
+        </div><!--end footer-->
+
+      </div> <!-- end controller -->
+
+    </div> <!-- end container -->
 
   </body>
 </html>

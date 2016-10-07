@@ -7,15 +7,24 @@ body {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2em;
+  margin-top: 75px;
 }
 
-a {
+/*a {
+  font-size: 1.4em;
+}*/
+
+p {
   font-size: 1.4em;
 }
 
 .container-fluid {
   width: 90%;
+}
+
+.intro {
+  padding-top: 50px;
 }
 
 /* Styles for tablet */
