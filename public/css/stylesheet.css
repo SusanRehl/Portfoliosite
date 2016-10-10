@@ -4,6 +4,7 @@ html {
 }
 body {
   font-size: 62.5%; /* 1 em = 10 px */
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
