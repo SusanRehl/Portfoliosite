@@ -12,20 +12,51 @@ h1 {
   margin-top: 75px;
 }
 
-/*a {
-  font-size: 1.4em;
-}*/
-
 p {
   font-size: 1.4em;
 }
 
 .container-fluid {
-  width: 90%;
+  width: 100%;
 }
 
 .intro {
   padding-top: 50px;
+}
+
+.navbarcolor {
+  background: linear-gradient(to right, #e6002e, #6625a7);
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.mynav {
+  font-size: 1.8em;
+  padding-right: 25px;
+  color: #FFF:
+}
+
+.navbar-nav.navbar-right li a {
+    color: #FFF;
+}
+
+.navbar-nav.navbar-right li a:hover{
+  text-decoration: none;
+  color: #999999;
+}
+
+.travel, .naturephotos, .cats {
+  background: #f2f2f2;
+}
+
+.footer {
+  background: #6625a7;
+  color: #FFF;
+  margin: 0 -30px;
+  padding: 10px 30px;
 }
 
 /* Styles for tablet */
