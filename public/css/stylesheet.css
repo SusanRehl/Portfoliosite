@@ -59,6 +59,20 @@ li {
   padding: 10px 30px;
 }
 
+.button {
+  background-color: #6625a7;
+  color: #FFF;
+  /*font-family: 'PT Sans Narrow', "Helvetica, sans-serif";*/
+  margin-bottom: 10px;
+  padding-bottom: -5px;
+}
+
+.button:hover {
+    background-color: #e6002e;
+		cursor: pointer;
+    text-decoration: none;
+}
+
 /* Styles for tablet */
 @media screen and (max-width: 768px) {
   h1 {
