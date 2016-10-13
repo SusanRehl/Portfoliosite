@@ -29,6 +29,10 @@ app.get( '/travel', function( req, res ){  // makes view.html available
     res.sendFile( path.resolve( 'views/travel.html' ) );
     });
 
+app.get( '/naturephotos', function( req, res ){  // makes view.html available
+    res.sendFile( path.resolve( 'views/naturephotos.html' ) );
+    });
+
 app.get( '/diy', function( req, res ){  // makes view.html available
       res.sendFile( path.resolve( 'views/diy.html' ) );
       });
