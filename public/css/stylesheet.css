@@ -56,7 +56,8 @@ li {
   background: #6625a7;
   color: #FFF;
   margin: 0 -30px;
-  padding: 10px 30px;
+  padding: 10px 30px 10px 50px;
+  font-size: .8em;
 }
 
 .button {
