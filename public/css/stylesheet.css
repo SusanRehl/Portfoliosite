@@ -21,7 +21,7 @@ p {
 }
 
 .intro {
-  padding-top: 50px;
+  padding: 75px 20px 25px 20px;
 }
 
 .navbarcolor {
@@ -48,8 +48,14 @@ li {
   color: #999999;
 }
 
-.travel, .naturephotos, .cats {
+.code, .artwork, .diy {
   background: #f2f2f2;
+  margin: 0 -30px;
+  padding: 10px 30px 25px 70px;
+}
+
+.travel, .naturephotos, .cats {
+  padding: 10px 30px 25px 40px;
 }
 
 .footer {
