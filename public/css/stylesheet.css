@@ -12,6 +12,12 @@ h1 {
   margin-top: 75px;
 }
 
+h3 {
+  text-align: center;
+  padding: 10px 0;
+  color: #e6002e;
+}
+
 p {
   font-size: 1.4em;
 }
@@ -21,7 +27,7 @@ p {
 }
 
 .intro {
-  padding: 75px 20px 25px 20px;
+  padding: 75px 50px 25px 70px;
 }
 
 .navbarcolor {
@@ -34,9 +40,13 @@ li {
 }
 
 .mynav {
-  font-size: 1.8em;
+  font-size: 1.4em;
   padding-right: 25px;
   color: #FFF:
+}
+
+.topspace {
+  margin-top: 10px;
 }
 
 .navbar-nav.navbar-right li a {
@@ -51,18 +61,31 @@ li {
 .code, .artwork, .diy {
   background: #f2f2f2;
   margin: 0 -30px;
-  padding: 10px 30px 25px 70px;
+  padding: 10px 70px 25px 100px;
 }
 
 .travel, .naturephotos, .cats {
-  padding: 10px 30px 25px 40px;
+  padding: 10px 70px 25px 70px;
+}
+
+.caption {
+
+}
+
+.captionhead {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.center {
+  text-align: center;
 }
 
 .footer {
   background: #6625a7;
   color: #FFF;
   margin: 0 -30px;
-  padding: 10px 30px 10px 50px;
+  padding: 10px 30px 10px 70px;
   font-size: .8em;
 }
 
