@@ -75,10 +75,19 @@ li {
 .captionhead {
   font-weight: bold;
   font-size: 1.7em;
+  margin-top: 15px;
 }
 
 .center {
   text-align: center;
+}
+
+.leftspace {
+  margin-left: 20px;
+}
+
+.rightspace {
+  margin-right: 20px;
 }
 
 .footer {
@@ -93,7 +102,7 @@ li {
   background-color: #6625a7;
   color: #FFF;
   /*font-family: 'PT Sans Narrow', "Helvetica, sans-serif";*/
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
   padding-bottom: -5px;
 }
 
