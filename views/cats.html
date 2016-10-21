@@ -16,13 +16,11 @@
     <div class="container-fluid">
       <div ng-include="'partials/navbar.html'">
       </div>
-      <h1>Adventures with Cats</h1>
-      <p>Introductory copy about cats.</p>
-        <div class="row">
-            <div class="col-md-4">
-              <p>Left column image of cat with link to view cat images.</p>
-            </div>  <!-- end col 1 -->
-            <div class="col-md-8">
+      <div class="whitesection">
+         <h1>Adventures with Cats</h1>
+         <p>Introductory copy about cats.</p>
+         <div class="row">
+             <div class="col-md-8">
                 <p>Observations about Cats</p>
                 <button>Getting a cat</button>  <!-- copy in ng-show toggle dropdown  -->
                 <div> Copy</div>
@@ -36,8 +34,12 @@
                   <div> Copy</div>
                 <button>Displaced aggression</button>  <!-- copy in ng-show toggle dropdown  -->
                   <div> Copy</div>
-          </div>
-        </div>  <!-- end row -->
+             </div>   <!-- end col 1 -->
+             <div class="col-md-4">
+                <p>Right column cat images.</p>
+             </div>  <!-- end col 2 -->
+         </div>  <!-- end row -->
+       </div> <!-- end whitesection -->
       </div> <!-- end container-fluid -->
   </body>
 </html>
