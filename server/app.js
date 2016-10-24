@@ -1,5 +1,6 @@
 var express=require('express');  // sets up express
 var app=express();
+var router = express.Router();
 var path=require('path');  // sets up paths
 var bodyParser=require('body-parser');  // sets up body-parser for POST method (for admin user feature stretch goal)
 var urlencodedParser=bodyParser.urlencoded( {extended: false} );
@@ -17,19 +18,19 @@ var connectionString = '';
  console.log("connectionString set to: ", connectionString);
 
 app.use(bodyParser.json());
+app.use('/', router);
 
 //  set basic url
-app.get( '/', function( req, res ){
+router.get( '/', function( req, res ){
+  console.log("this is router.get");
   res.sendFile( path.resolve( 'public/views/index.html' ) );
 });
 
 // app.get("/*", function(req,res){
-//     console.log(req.params[0]);
+//     console.log("this is", req.params[0]);
 //     var file = req.params[0] || "/views/index.html";
 //     res.sendFile(__dirname, "/public", file);
 // });
-
-
 
 // app.get( '/art', function( req, res ){  // makes art.html available
 //   res.sendFile( path.resolve( 'views/art.html' ) );

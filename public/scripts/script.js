@@ -3,11 +3,11 @@ var myApp=angular.module( 'myApp', ['ngRoute'] );
 myApp.config(["$routeProvider", function($routeProvider, $locationProvider) {
 	console.log("in scripts in config function");
 	$routeProvider
-	  .when("/home", {
+	  .when("#home", {
 			templateURL: "views/routes/home.html",
       controller: "viewController"
 		})
-		.when("/art", {
+		.when("#art", {
 			templateURL: "views/routes/art.html",
       controller: "viewController"
 		})
@@ -35,4 +35,9 @@ myApp.config(["$routeProvider", function($routeProvider, $locationProvider) {
 			redirectTo: "/home"
 		});
 
+}]);
+
+
+myApp.controller("viewController", ["$scope", function($scope){
+    console.log("Loaded stuff");
 }]);
