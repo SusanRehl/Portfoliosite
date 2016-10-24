@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 
-<html>
   <head>
     <meta charset="utf-8">
     <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.js"></script>
     <script src="vendors/jquery-2.2.3.min.js"></script>
+    <script src="vendors/picturefill.min.js"></script>
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css" charset="utf-8">
     <link rel="stylesheet" href="css/stylesheet.css" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Raleway:600,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:900" rel="stylesheet">
-    <title>Art Adventures</title>
+    <script type="text/javascript" src="scripts/viewController.js"></script>
+    <title>Susan Rehl's Site</title>
   </head>
-  <body>
-    <div class="container-fluid">
-      <div ng-include="'partials/navbar.html'">
-      </div>
-      <div class="whitesection">
-        <h1>Art Adventures</h1>
-        <p>Introductory copy about my artwork.</p>
-        <div>
-            <p>Buttons for art collections go here.</p>
-        </div>
-        <div>
-          <p>Carousel of art and comments.</p>
-       </div>
-     </div> <!-- end section -->
+  <!-- <body ng-app="myApp"> -->
+<body>
+       <div ng-include="'views/partials/navbar.html'"></div>
+
+       <!-- <div>
+          <img ng-src="/images/SusanInSiena.png" alt="Susan Rehl picture"></img>
+       </div> -->
+
+       <main ng-view></main>
+
+       <div ng-include="'views/partials/footer.html'"></div>
+
   </body>
 </html>

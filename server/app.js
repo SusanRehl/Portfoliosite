@@ -18,34 +18,42 @@ var connectionString = '';
 
 app.use(bodyParser.json());
 
-// Pages //
-app.get( '/', function( req, res ){    // set basic url
-  res.sendFile( path.resolve( 'views/index.html' ) );
+//  set basic url
+app.get( '/', function( req, res ){
+  res.sendFile( path.resolve( 'public/views/index.html' ) );
 });
 
-app.get( '/art', function( req, res ){  // makes view.html available
-  res.sendFile( path.resolve( 'views/art.html' ) );
-  });
+// app.get("/*", function(req,res){
+//     console.log(req.params[0]);
+//     var file = req.params[0] || "/views/index.html";
+//     res.sendFile(__dirname, "/public", file);
+// });
 
-app.get( '/travel', function( req, res ){  // makes view.html available
-    res.sendFile( path.resolve( 'views/travel.html' ) );
-    });
 
-app.get( '/naturephotos', function( req, res ){  // makes view.html available
-    res.sendFile( path.resolve( 'views/naturephotos.html' ) );
-    });
 
-app.get( '/diy', function( req, res ){  // makes view.html available
-      res.sendFile( path.resolve( 'views/diy.html' ) );
-      });
-
-app.get( '/cats', function( req, res ){  // makes view.html available
-        res.sendFile( path.resolve( 'views/cats.html' ) );
-        });
-
-app.get( '/blog', function( req, res ){  // makes view.html available
-  res.sendFile( path.resolve( 'views/blog.html' ) );
-  });
+// app.get( '/art', function( req, res ){  // makes art.html available
+//   res.sendFile( path.resolve( 'views/art.html' ) );
+//   });
+//
+// app.get( '/travel', function( req, res ){  // makes travel.html available
+//     res.sendFile( path.resolve( 'views/travel.html' ) );
+//     });
+//
+// app.get( '/naturephotos', function( req, res ){  // makes naturephotos.html available
+//     res.sendFile( path.resolve( 'views/naturephotos.html' ) );
+//     });
+//
+// app.get( '/diy', function( req, res ){  // makes diy.html available
+//       res.sendFile( path.resolve( 'views/diy.html' ) );
+//       });
+//
+// app.get( '/cats', function( req, res ){  // makes cats.html available
+//         res.sendFile( path.resolve( 'views/cats.html' ) );
+//         });
+//
+// app.get( '/blog', function( req, res ){  // makes blog.html available
+//   res.sendFile( path.resolve( 'views/blog.html' ) );
+//   });
 
 
 
@@ -55,4 +63,7 @@ app.set("port", (process.env.PORT || 8080));
 app.listen(app.get("port"), function(){
       console.log("Listening on port: ", app.get("port"));
   });
+
 app.use(express.static('public'));
+
+module.exports=app;
