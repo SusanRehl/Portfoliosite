@@ -58,12 +58,19 @@ li {
 
 .navbar-nav.navbar-right li a {
     color: #FFF;
+    text-decoration: none;
 }
 
 .navbar-nav.navbar-right li a:hover{
   text-decoration: none;
   color: #999999;
 }
+
+.navbar-nav.navbar-right li a:active{
+  text-decoration: none;
+  color: orange;
+}
+
 
 .adventure {
   font-family: 'Arima Madurai', cursive;
