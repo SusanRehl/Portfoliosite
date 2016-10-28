@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: "Helvetica, sans-serif";
+
 }
 body {
   font-size: 62.5%; /* 1 em = 10 px */
@@ -68,12 +69,11 @@ li {
 
 .navbar-nav.navbar-right li a:active{
   text-decoration: none;
-  color: orange;
+  color: #FFF;
 }
 
-
 .adventure {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', "Times New Roman", serif;
   font-size: 2.5em;
   letter-spacing: 15px;
   text-transform: uppercase;
@@ -91,13 +91,13 @@ li {
 }
 
 .caption {
-
+  font-size: 1.4em;
 }
 
 .captionhead {
   font-weight: bold;
   font-size: 1.7em;
-  margin-top: 15px;
+  margin: 15px 0 5px 0;
 }
 
 .center {
@@ -115,7 +115,6 @@ li {
 .footer {
   background: #6625a7;
   color: #FFF;
-  /*margin: 0 -50px;*/
   padding: 60px 30px 10px 50px;
   font-size: .8em;
 }
@@ -123,7 +122,6 @@ li {
 .button {
   background-color: #6625a7;
   color: #FFF;
-  /*font-family: 'PT Sans Narrow', "Helvetica, sans-serif";*/
   margin: 20px 0 10px 0;
   padding-bottom: -5px;
 }
