@@ -1,4 +1,4 @@
-var myApp=angular.module( 'myApp', ['ngRoute'] );
+var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.config(["$routeProvider", function($routeProvider) {   //  , $locationProvider
 	console.log("in scripts in config function");
