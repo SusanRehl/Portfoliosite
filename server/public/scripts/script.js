@@ -4,31 +4,31 @@ myApp.config(["$routeProvider", function($routeProvider) {   //  , $locationProv
 	console.log("in scripts in config function");
 	$routeProvider.
 	  when("/home", {
-			templateURL: "/views/routes/home.html",
+			templateUrl: "/views/routes/home.html",
       controller: "homeController"
 		}).
 		when("/art", {
-			templateURL: "/views/routes/art.html",
+			templateUrl: "/views/routes/art.html",
       controller: "artController"
 		}).
 		when("/cats", {
-			templateURL: "/views/routes/cats.html",
+			templateUrl: "/views/routes/cats.html",
       controller: "catsController"
 		}).
     when("/blog", {
-			templateURL: "/views/routes/blog.html",
+			templateUrl: "/views/routes/blog.html",
       controller: "blogController"
 		}).
     when("/diy", {
-			templateURL: "/views/routes/diy.html",
+			templateUrl: "/views/routes/diy.html",
       controller: "diyController"
 		}).
     when("/naturephotos", {
-			templateURL: "/views/routes/naturephotos.html",
+			templateUrl: "/views/routes/naturephotos.html",
       controller: "natureController"
 		}).
     when("/travel", {
-			templateURL: "/views/routes/travel.html",
+			templateUrl: "/views/routes/travel.html",
       controller: "travelController"
 		}).
 		otherwise({
