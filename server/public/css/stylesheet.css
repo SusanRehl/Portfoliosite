@@ -24,6 +24,10 @@ h2 {
 
 h3 {
   font-size: 2em;
+  font-family: 'Arima Madurai', cursive;
+  margin-left: 30px;
+  padding: 10px 0;
+  color: #e6002e;
 }
 
 p {
@@ -83,7 +87,7 @@ li {
 .graysection {
   background: #f2f2f2;
   margin: 0 -30px;
-  padding: 10px 70px 25px 100px;
+  padding: 10px 70px 25px 70px;
 }
 
 .whitesection {
@@ -112,10 +116,14 @@ li {
   margin-right: 20px;
 }
 
+.bottomspace {
+  margin-bottom: 40px;
+}
+
 .footer {
   background: #6625a7;
   color: #FFF;
-  padding: 60px 30px 10px 50px;
+  padding: 30px 30px 10px 50px;
   font-size: .8em;
 }
 
@@ -127,7 +135,7 @@ li {
 }
 
 .button:hover {
-    background-color: #e6002e;
+    background-color: #ac00e6;
 		cursor: pointer;
     text-decoration: none;
 }
