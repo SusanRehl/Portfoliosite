@@ -2,54 +2,64 @@
       <div class="whitesection">
 
          <h1>Adventures in Design &#38; Marketing </h1>
-         <p>Introductory copy about my DIY projects.</p>
+         <p>I began my career as a professional graphic designer and art director, working for non-profits, small agencies and freelancing.
+           I greatly enjoyed developing logos and corporate identity, which led me to pursue marketing.</p>
+         <p>After getting an MBA in marketing, I worked in product management and communications for companies and non-profits at which
+           I was able to continue to use my design background. In my most recent position, as head of the marketing team at a small medical supplies distributor,
+           I discovered my fascination with the technology used by marketing. This led me to pursue a career in software development,
+           focusing on front end where I can use my design and marketing skills and experience to enrich my software development work.</p>
       </div><!-- end whitesection -->
 
-      <div class="graysection">
+      <div class="graysection" ng-controller="modalController">
 
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-3">
-              <p>design 1 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead bottomspace center">Title here</p>
-            </div>
-            <div class="col-md-3">
-              <p>design 2 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead center">Title here</p>
-            </div>
-            <div class="col-md-3">
-              <p>design 3 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead center">Title here</p>
-            </div>
-            <div class="col-md-2">
-            </div>
-        </div> <!-- end row-->
+        <h3>My Projects</h3>
+           <div class="row center">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-3">
+                 <a ng-click="toggleModal()"><img class="imageicon" ng-src="images/unimedlogoICON.png"></img></a>
+                 <p class="captionhead bottomspace center">Unimed Corporation</p>
+                <modal-dialog show='modalShown' width='454px' height='500px'>
+                  <img ng-src="images/VisageSellsheet.png"></img>
+                  <p>Product Sellsheet</p>
+                </modal-dialog>
+              </div>
+              <div class="col-md-3">
+                <img class="imageicon" ng-src="images/UGSMedicalLogoICON.png"></img>
+                <p class="captionhead center">UGS Medical</p>
+                <modal-dialog show='modalShown' width='304px' height='500px'>
+                  <img ng-src="images/UGSMedicalVerticalBanner.png"></img>
+                  <p>Tradeshow Vertical Banner</p>
+                </modal-dialog>
+              </div>
+              <div class="col-md-3">
+                <img class="imageicon" ng-src="images/RSClogoICON.png"></img>
+                <p class="captionhead center">Research Supply Company</p>
+              </div>
+              <div class="col-md-2">
+              </div>
+          </div> <!-- end row-->
 
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-3">
-              <p>design 4 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead bottomspace center">Title here</p>
-            </div>
-            <div class="col-md-3">
-              <p>design 5 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead center">Title here</p>
-            </div>
-            <div class="col-md-3">
-              <p>design 6 image here</p>
-              <!-- <img ng-src="images/disinfectshot.png" class="bottomspace"></img> -->
-              <p class="captionhead center">Title here</p>
-            </div>
-            <div class="col-md-2">
-            </div>
-        </div> <!-- end row-->
+          <div class="row center">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-3">
+                <img class="imageicon" ng-src="images/unimedSPRlogoICON.png"></img>
+                <p class="captionhead center">Unimed Corp. for S.P. Richards Co.</p>
+              </div>
+              <div class="col-md-3">
+                <img class="imageicon" ng-src="images/unimedstapleslogoICON.png"></img>
+                <p class="captionhead center">Unimed Corp. for Staples</p>
+              </div>
+              <div class="col-md-3">
+                <img class="imageicon" ng-src="images/FitInLogoICON.png"></img>
+                <p class="captionhead center">Fit In Fitness and Training</p>
+              </div>
+              <div class="col-md-2">
+              </div>
+          </div> <!-- end row-->
+
+        </div> <!-- end modalController -->
 
       </div> <!-- end graysection -->
     </div>  <!-- end container -->
