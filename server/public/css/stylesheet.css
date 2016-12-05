@@ -9,13 +9,13 @@ body {
 }
 
 h1 {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', 'Times New Roman', serif;
   font-size: 3em;
   margin-top: 70px;
 }
 
 h2 {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', 'Times New Roman', serif;
   font-size: 2.6em;
   text-align: center;
   padding: 10px 0;
@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   font-size: 2em;
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai', 'Times New Roman', serif;
   margin-left: 30px;
   padding: 10px 0;
   color: #e6002e;
@@ -48,7 +48,6 @@ p {
 
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
-  color: #fff;
 }
 
 li {
@@ -58,7 +57,6 @@ li {
 .mynav {
   font-size: 1.4em;
   padding-right: 25px;
-  color: #FFF:
 }
 
 .topspace {
@@ -80,9 +78,15 @@ li {
   color: #aaddee;
 }
 
+.active {
+   font-family: 'Arima Madurai', 'Times New Roman', serif;
+   font-size: 1.5em;
+}
+
 .adventure {
   font-family: 'Arima Madurai', "Times New Roman", serif;
   font-size: 2.5em;
+  color: #FFF;
   letter-spacing: 15px;
   text-transform: uppercase;
   margin-top: 5px;
@@ -160,10 +164,6 @@ li {
     background-color: #ac00e6;
 		cursor: pointer;
     text-decoration: none;
-}
-
-.active {
-   color: orange;
 }
 
 .icon {
