@@ -23,7 +23,6 @@ var path=require('path');  // sets up paths
 app.set("port", (process.env.PORT || 8080));
 
 app.get("/*", function( req, res ){
-    console.log("this is req.params: ", req.params[0]);
     var file = req.params[0] || "/views/index.html";
     console.log(file);
     res.sendFile(path.join(__dirname, "./public", file));
