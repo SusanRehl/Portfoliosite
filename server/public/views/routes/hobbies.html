@@ -24,29 +24,21 @@
                    <p class="captionhead">Italy Adventure</p>
 
                        <div ng-controller="hobbiesController">
-
-                           <div style="height: 305px">
+                           <!-- <div style="height: 400px"> -->
                              <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                                 <img ng-src="{{slide.image}}" style="margin:auto;">
+                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" class="carouselback">
+                                 <!-- <img ng-src="{{slide.image}}" style="margin:auto;"> -->
+                                 <div>
+                                   <!-- <img ng-src="{{slide.image}}" style="max-height:300px; margin:0 auto;"> -->
+                                   <img ng-src="{{slide.image}}" class="carouselimage">
+                                 </div>
                                  <div class="carousel-caption">
-                                   <h4>Slide {{slide.id}}</h4>
-                                   <p>{{slide.text}}</p>
+                                   <h4>{{slide.text}}</h4>
+                                   <h5>{{slide.id}} of x</h5>
                                  </div>
                                </div>
                              </div>
-                           </div>
-                           
-
-
-
-
-
-
-
-
-
-
+                           <!-- </div> -->
                         </div> <!-- end hobbiesController -->
 
                   </div> <!-- end col 2 -->

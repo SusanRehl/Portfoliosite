@@ -30,6 +30,12 @@ h3 {
   color: #e6002e;
 }
 
+h4 {
+  margin-top: -70px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
 p {
   font-size: 1.4em;
 }
@@ -174,6 +180,39 @@ li {
 .imageicon {
   border: 3px solid #cccccc;
 }
+
+/* Carousel Styling */
+
+
+.carousel-indicators li {  /* hides dot style navigation buttons */
+  visibility: hidden;
+}
+
+.carouselback {
+  background-color: #000;
+}
+
+.carousel-control {  /* made space around arrows narrower */
+  width: 50px;
+}
+
+.carousel {   /* made entire carousel narrower*/
+  width: 650px;
+}
+
+.carouselimage {  /* aligns image vertically with caption */
+  max-height: 300px;
+  margin: 15px auto 50px auto;
+  padding-bottom: 40px;
+}
+
+.carousel-caption {   /* moves caption to underneath photo - default is on top of photo */
+  margin: -25px -25px -50px -25px;
+  padding: -250px 0 0 0;
+  background-color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
 
 /*Modal Styling:*/
 .ng-modal-dialog {

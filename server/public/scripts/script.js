@@ -24,37 +24,16 @@ myApp.controller("hobbiesController", ["$scope", function($scope){
     $scope.addSlide = function() {  // adds slides, text, and id to array
       var newWidth = 600 + slides.length + 1;
       slides.push({
-        image: '//unsplash.it/' + newWidth + '/300',
+        image: '//unsplash.it/' + newWidth + '/300',  // uses unsplash.it website of placeholder images. newWidth and 300 are width and height for unsplash.it
         text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
         id: currIndex++
       });
       console.log(slides);
     };
 
-      // $scope.randomize = function() {
-      //   var indexes = generateIndexesArray();
-      //   assignNewIndexesToSlides(indexes);
-      // };
-
       for (var i = 0; i < 4; i++) {   // runs addSlide function 4 times for the 4 pix
         $scope.addSlide();
       }
-
-      // Randomize logic below
-
-      // function assignNewIndexesToSlides(indexes) {
-      //   for (var i = 0, l = slides.length; i < l; i++) {
-      //     slides[i].id = indexes.pop();
-      //   }
-      // }
-      //
-      // function generateIndexesArray() {
-      //   var indexes = [];
-      //   for (var i = 0; i < currIndex; ++i) {
-      //     indexes[i] = i;
-      //   }
-      //   return shuffle(indexes);
-      // }
 
 
     // });
