@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute"]);
+var myApp = angular.module("myApp", ["ngRoute", "ui.bootstrap"]);
 
 myApp.controller("homeController", ["$scope", function($scope){
     console.log("Loaded home");
@@ -14,6 +14,54 @@ myApp.controller("designController", ["$scope", function($scope){
 
 myApp.controller("hobbiesController", ["$scope", function($scope){
     console.log("Loaded hobbies");
+
+    $scope.myInterval = 5000;  // interval between slides
+    $scope.noWrapSlides = false;  // wraps slides
+    $scope.active = 0;  // sets index of first (active) slide to 0
+    var slides = $scope.slides = [];  // creates empty array for slides
+    var currIndex = 0;  // sets currIndex id to 0
+
+    $scope.addSlide = function() {  // adds slides, text, and id to array
+      var newWidth = 600 + slides.length + 1;
+      slides.push({
+        image: '//unsplash.it/' + newWidth + '/300',
+        text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+        id: currIndex++
+      });
+      console.log(slides);
+    };
+
+      // $scope.randomize = function() {
+      //   var indexes = generateIndexesArray();
+      //   assignNewIndexesToSlides(indexes);
+      // };
+
+      for (var i = 0; i < 4; i++) {   // runs addSlide function 4 times for the 4 pix
+        $scope.addSlide();
+      }
+
+      // Randomize logic below
+
+      // function assignNewIndexesToSlides(indexes) {
+      //   for (var i = 0, l = slides.length; i < l; i++) {
+      //     slides[i].id = indexes.pop();
+      //   }
+      // }
+      //
+      // function generateIndexesArray() {
+      //   var indexes = [];
+      //   for (var i = 0; i < currIndex; ++i) {
+      //     indexes[i] = i;
+      //   }
+      //   return shuffle(indexes);
+      // }
+
+
+    // });
+
+
+
+
 }]);
 
 myApp.controller("contactController", ["$scope", function($scope){

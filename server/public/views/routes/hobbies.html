@@ -1,86 +1,120 @@
     <div class="container-fluid">
-      <div class="whitesection">
 
-         <h1>Hobby Adventures</h1>
-         <p>My hobbies center around creative arts and nature. Checkout my photography, artwork, DIY projects, and of course my cats!</p>
-         <p>More content is coming!</p>
 
-      </div><!--end whitesection-->
 
-      <div class="graysection">
+        <div class="whitesection">
 
-        <h3>Photography</h3>
+           <h1>Hobby Adventures</h1>
+           <p>My hobbies center around creative arts and nature. Checkout my photography, artwork, DIY projects, and of course my cats!</p>
+           <p>More content is coming!</p>
 
-         <div class="row">
-             <div class="col-md-2">
-             <p></p>
-             </div>
-             <div class="col-md-8">
-             <p class="captionhead">Italy Adventure</p>
-             <p>carousel goes here</p>
-             </div>
-             <div class="col-md-2">
-             <p></p>
-             </div>
-         </div> <!-- end row -->
+        </div><!--end whitesection-->
 
-      </div> <!-- end graysection -->
+        <div class="graysection">
 
-      <div class="whitesection">
+          <h3>Photography</h3>
 
-        <h3>Art</h3>
+           <div class="row">
+               <div class="col-md-2"> <!-- col 1 empty -->
+               <p></p>
+             </div><!-- end col 1 -->
 
-        <div class="row">
-            <div class="col-md-1">
-            <p></p>
-            </div>
-            <div class="col-md-4 center">
-              <p class="captionhead">Watercolor Mandala</p>
-              <img ng-src="images/treemandala.png"></img>
-            </div>
-            <div class="col-md-7 vcenter">
-              <p>More content coming soon.</p>
-            </div>
-        </div> <!-- end row -->
+               <div class="col-md-8">  <!-- col 2 -->
 
-      </div> <!-- end whitesection -->
+                   <p class="captionhead">Italy Adventure</p>
 
-      <div class="graysection">
+                       <div ng-controller="hobbiesController">
 
-        <h3>DIY Projects</h3>
+                           <div style="height: 305px">
+                             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                                 <img ng-src="{{slide.image}}" style="margin:auto;">
+                                 <div class="carousel-caption">
+                                   <h4>Slide {{slide.id}}</h4>
+                                   <p>{{slide.text}}</p>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           
 
-        <div class="row">
-            <div class="col-md-1">
-            <p></p>
-            </div>
-            <div class="col-md-4 center">
-              <p class="captionhead">Redesigned Lamp</p>
-              <img ng-src="images/lamp.png"></img>
-            </div>
-            <div class="col-md-7 vcenter">
-              <p>More content coming soon.</p>
-            </div>
-        </div> <!-- end row -->
 
-      </div> <!-- end graysection -->
 
-      <div class="whitesection">
 
-        <h3>Cats</h3>
 
-         <div class="row">
-             <div class="col-md-1">
-             <p></p>
-             </div>
-             <div class="col-md-4 center">
-               <p class="captionhead">Anya and Tasha</p>
-               <img ng-src="images/cats.png"></img>
-             </div>
-             <div class="col-md-7 vcenter">
-               <p>More content coming soon.</p>
-             </div>
-         </div> <!-- end row -->
 
-      </div> <!-- end whitesection -->
+
+
+
+
+                        </div> <!-- end hobbiesController -->
+
+                  </div> <!-- end col 2 -->
+
+                  <div class="col-md-2"> <!-- col 3 empty -->
+                     <p></p>
+                  </div><!-- end col 3 -->
+           </div> <!-- end row -->
+
+        </div> <!-- end graysection -->
+
+        <div class="whitesection">
+
+          <h3>Art</h3>
+
+          <div class="row">
+              <div class="col-md-1">
+              <p></p>
+              </div>
+              <div class="col-md-4 center">
+                <p class="captionhead">Watercolor Mandala</p>
+                <img ng-src="images/treemandala.png"></img>
+              </div>
+              <div class="col-md-7 vcenter">
+                <p>More content coming soon.</p>
+              </div>
+          </div> <!-- end row -->
+
+        </div> <!-- end whitesection -->
+
+        <div class="graysection">
+
+          <h3>DIY Projects</h3>
+
+          <div class="row">
+              <div class="col-md-1">
+              <p></p>
+              </div>
+              <div class="col-md-4 center">
+                <p class="captionhead">Redesigned Lamp</p>
+                <img ng-src="images/lamp.png"></img>
+              </div>
+              <div class="col-md-7 vcenter">
+                <p>More content coming soon.</p>
+              </div>
+          </div> <!-- end row -->
+
+        </div> <!-- end graysection -->
+
+        <div class="whitesection">
+
+          <h3>Cats</h3>
+
+           <div class="row">
+               <div class="col-md-1">
+               <p></p>
+               </div>
+               <div class="col-md-4 center">
+                 <p class="captionhead">Anya and Tasha</p>
+                 <img ng-src="images/cats.png"></img>
+               </div>
+               <div class="col-md-7 vcenter">
+                 <p>More content coming soon.</p>
+               </div>
+           </div> <!-- end row -->
+
+        </div> <!-- end whitesection -->
+
+
 
     </div> <!-- end container -->
