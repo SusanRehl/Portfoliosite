@@ -22,24 +22,39 @@ myApp.controller("hobbiesController", ["$scope", function($scope){
     var currIndex = 0;  // sets currIndex id to 0
 
     $scope.addSlide = function() {  // adds slides, text, and id to array
-      var newWidth = 600 + slides.length + 1;
+      var newWidth = 600 + slides.length + 3;  // changing width gives you different pictures from unsplash.it
       slides.push({
         image: '//unsplash.it/' + newWidth + '/300',  // uses unsplash.it website of placeholder images. newWidth and 300 are width and height for unsplash.it
         text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
         id: currIndex++
       });
-      console.log(slides);
     };
 
       for (var i = 0; i < 4; i++) {   // runs addSlide function 4 times for the 4 pix
         $scope.addSlide();
       }
 
+        console.log(slides);
 
-    // });
-
-
-
+      // $scope.getItalySlides = function() {
+        // gets all slides for Italy carousel on Hobbies page
+        // event.preventDefault();
+        // $http({
+          // gets recordset via GET
+        //   method: 'GET',
+        //   url: '/italyslides',
+        // }).then( function(response){
+          // success call - runs function with response parameter
+          // slides = response.data;
+          // pulls the data from app.js and sets to global var slides
+        // }, function myError(response){
+        //   console.log(response.statusText);
+        // }
+        // end error function
+        // );
+        // end then response
+      // };
+      // end getItalySlides function
 
 }]);
 
@@ -53,7 +68,6 @@ myApp.controller("blogController", ["$scope", function($scope){
 
 myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
 		$scope.isActive = function(route) {
-			console.log(route);
 			return route === $location.path();
 		};
 }]);
