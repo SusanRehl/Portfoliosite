@@ -27,10 +27,10 @@
                              <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" class="carouselback">
                                  <div>
-                                   <img ng-src="{{slide.image}}" class="carouselimage">
+                                   <img ng-src="{{slide.filename}}" class="carouselimage">
                                  </div>
                                  <div class="carousel-caption">
-                                   <h4>{{slide.text}}</h4>
+                                   <h4>{{slide.comment}}</h4>
                                    <h5>{{slide.id}} of {{slide.length}}</h5>
                                  </div>
                                </div>

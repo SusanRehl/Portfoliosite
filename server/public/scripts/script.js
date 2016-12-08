@@ -12,7 +12,7 @@ myApp.controller("designController", ["$scope", function($scope){
     console.log("Loaded design");
 }]);
 
-myApp.controller("hobbiesController", ["$scope", function($scope){
+myApp.controller("hobbiesController", ["$scope", "$http", function($scope, $http){
     console.log("Loaded hobbies");
 
     $scope.myInterval = 5000;  // interval between slides
@@ -21,52 +21,37 @@ myApp.controller("hobbiesController", ["$scope", function($scope){
     var slides = $scope.slides = [];  // creates empty array for slides
     var currIndex = 0;  // sets currIndex id to 0
 
-    $scope.addSlide = function() {  // adds slides, text, and id to array
-      var newWidth = 600 + slides.length + 3;  // changing width gives you different pictures from unsplash.it
-      slides.push({
-        image: '//unsplash.it/' + newWidth + '/300',  // uses unsplash.it website of placeholder images. newWidth and 300 are width and height for unsplash.it
-        text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-        id: currIndex++
-      });
-    };
+    // $scope.addSlide = function() {
+    //   var newWidth = 600 + slides.length + 3;
+    //   slides.push({
+    //     image: '//unsplash.it/' + newWidth + '/300',
+    //     text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+    //     id: currIndex++
+    //   });
+    // };
+    //
+    //   for (var i = 0; i < 4; i++) {
+    //     $scope.addSlide();
+    //   }
 
-      for (var i = 0; i < 4; i++) {   // runs addSlide function 4 times for the 4 pix
-        $scope.addSlide();
-      }
-
-        console.log(slides);
-
-
-    $scope.selectItalySlides = function() { // selects Italy slides from mysite database, photography table
-        event.preventDefault();
-        objectToSend ={  // package inputs into object to send
-          areas: $scope.image,
-          surfaces: $scope.text
-          }; // end object
-              console.log("in scripts select about to run selectItalySlides");
-            $http({  // sends object via POST to select products to return
-              method: 'POST',
-              url: '/select',
-              data: objectToSend
-            });
-        }; // end selectProduct function
 
         // gets all slides for Italy carousel on Hobbies page
       $scope.getItalySlides = function() {
         event.preventDefault();
+        console.log("in getItalySlides function in script.js");
         $http({
           method: 'GET',
-          url: '/italyslides',
-        }).then( function(response){  // success call - runs function with response parameter
-          slides = response.data;      // pulls the data from app.js and sets to global var slides
+          url: '/getItalySlides'
+        }).then( function(response){
+          slides = response.data;
+          console.log(slides);
         }, function myError(response){
           console.log(response.statusText);
         }    // end error function
         );      // end then response
       };      // end getItalySlides function
-
-
-
+    $scope.getItalySlides();
+    
 
 }]);
 
