@@ -36,25 +36,37 @@ myApp.controller("hobbiesController", ["$scope", function($scope){
 
         console.log(slides);
 
-      // $scope.getItalySlides = function() {
+
+    $scope.selectItalySlides = function() { // selects Italy slides from mysite database, photography table
+        event.preventDefault();
+        objectToSend ={  // package inputs into object to send
+          areas: $scope.image,
+          surfaces: $scope.text
+          }; // end object
+              console.log("in scripts select about to run selectItalySlides");
+            $http({  // sends object via POST to select products to return
+              method: 'POST',
+              url: '/select',
+              data: objectToSend
+            });
+        }; // end selectProduct function
+
         // gets all slides for Italy carousel on Hobbies page
-        // event.preventDefault();
-        // $http({
-          // gets recordset via GET
-        //   method: 'GET',
-        //   url: '/italyslides',
-        // }).then( function(response){
-          // success call - runs function with response parameter
-          // slides = response.data;
-          // pulls the data from app.js and sets to global var slides
-        // }, function myError(response){
-        //   console.log(response.statusText);
-        // }
-        // end error function
-        // );
-        // end then response
-      // };
-      // end getItalySlides function
+      $scope.getItalySlides = function() {
+        event.preventDefault();
+        $http({
+          method: 'GET',
+          url: '/italyslides',
+        }).then( function(response){  // success call - runs function with response parameter
+          slides = response.data;      // pulls the data from app.js and sets to global var slides
+        }, function myError(response){
+          console.log(response.statusText);
+        }    // end error function
+        );      // end then response
+      };      // end getItalySlides function
+
+
+
 
 }]);
 

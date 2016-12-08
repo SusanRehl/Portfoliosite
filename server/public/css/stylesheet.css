@@ -70,8 +70,8 @@ li {
 }
 
 .navbar-nav.navbar-right li a {
-    color: #FFF;
-    text-decoration: none;
+  text-decoration: none;
+  color: #FFF;
 }
 
 .navbar-nav.navbar-right li a:hover{
@@ -87,6 +87,7 @@ li {
 .active {
    font-family: 'Arima Madurai', 'Times New Roman', serif;
    font-size: 1.5em;
+   color: #aaddee;
 }
 
 .adventure {
@@ -183,7 +184,6 @@ li {
 
 /* Carousel Styling */
 
-
 .carousel-indicators li {  /* hides dot style navigation buttons */
   visibility: hidden;
 }
@@ -248,8 +248,6 @@ li {
   font-family: 'arial', 'sans-serif';
   color: #e6002e;
 }
-
-
 
 /* Styles for tablet */
 @media screen and (max-width: 768px) {
