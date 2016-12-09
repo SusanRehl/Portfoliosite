@@ -143,6 +143,14 @@ li {
   margin-bottom: 40px;
 }
 
+.bottomspace2 {
+  margin-bottom: 25px;
+}
+
+.rtalign {
+  float: right;
+}
+
 .vcenter {
   height: 430px;
   line-height: 400px;
@@ -198,10 +206,12 @@ li {
 
 .carousel {   /* made entire carousel narrower*/
   width: 650px;
+  min-height: 475px;
+  background-color: #000;
 }
 
 .carouselimage {  /* aligns image vertically with caption */
-  max-height: 300px;
+  max-height: 400px;
   margin: 15px auto 50px auto;
   padding-bottom: 40px;
 }

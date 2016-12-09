@@ -38,7 +38,7 @@ router.get('/getItalySlides', function(req, res) {  // pull selected images and 
       if (err) {     // check for errors
       console.log(err);
       } else { // start selection criteria
-          slides=client.query("SELECT * FROM photography WHERE place = 'Florence' OR place = 'Rome' OR place = 'Siena' ORDER BY id DESC");  // getting slides from photography table
+          slides=client.query("SELECT * FROM photography WHERE place = 'Florence' OR place = 'Rome' OR place = 'Siena' ORDER BY id");  // getting slides from photography table
           rows = 0;
           slides.on('row', function(row) {  // pushing to array
             italySlides.push(row);

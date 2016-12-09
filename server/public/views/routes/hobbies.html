@@ -14,27 +14,28 @@
 
           <h3>Photography</h3>
 
-           <div class="row">
-               <div class="col-md-2"> <!-- col 1 empty -->
-               <p></p>
-             </div><!-- end col 1 -->
+          <div ng-controller="hobbiesController">
+
+              <div class="row">
+                  <div class="col-md-2"> <!-- col 1 empty -->
+                  <p class="bottomspace2"></p>
+                  <button class="button btn-sm rtalign" ng-click="getItalySlides()">Start Slideshow</button>
+               </div><!-- end col 1 -->
 
                <div class="col-md-8">  <!-- col 2 -->
 
                    <p class="captionhead">Italy Adventure</p>
-
-                       <div ng-controller="hobbiesController">
                              <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" class="carouselback">
+                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index" class="carouselback">
                                  <div>
-                                   <img ng-src="{{slide.filename}}" class="carouselimage">
+                                   <img ng-src="{{slide.image}}" class="carouselimage">
                                  </div>
                                  <div class="carousel-caption">
-                                   <h4>{{slide.comment}}</h4>
-                                   <h5>{{slide.id}} of {{slide.length}}</h5>
+                                   <h4>{{slide.text}}</h4>
+                                   <h5>{{slide.id}} of {{count}}</h5>
                                  </div>
-                               </div>
-                             </div>
+                               </div>  <!-- end slide -->
+                             </div> <!-- end carousel -->
                         </div> <!-- end hobbiesController -->
 
 

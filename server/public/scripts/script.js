@@ -19,23 +19,19 @@ myApp.controller("hobbiesController", ["$scope", "$http", function($scope, $http
     $scope.noWrapSlides = false;  // wraps slides
     $scope.active = 0;  // sets index of first (active) slide to 0
     var slides = $scope.slides = [];  // creates empty array for slides
+    // var slides = $scope.slides = [];
     var currIndex = 0;  // sets currIndex id to 0
 
-    // $scope.addSlide = function() {
-    //   var newWidth = 600 + slides.length + 3;
-    //   slides.push({
-    //     image: '//unsplash.it/' + newWidth + '/300',
-    //     text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-    //     id: currIndex++
-    //   });
-    // };
-    //
-    //   for (var i = 0; i < 4; i++) {
-    //     $scope.addSlide();
-    //   }
-
-
+    $scope.count = 0;
+    $scope.totalSlides = function() {
+      console.log("here is slides.length: ", $scope.slides.length);
+      for(var i=0; i<$scope.slides.length; i++) {
+        $scope.count++;
+      }
+    };
         // gets all slides for Italy carousel on Hobbies page
+
+
       $scope.getItalySlides = function() {
         event.preventDefault();
         console.log("in getItalySlides function in script.js");
@@ -44,14 +40,21 @@ myApp.controller("hobbiesController", ["$scope", "$http", function($scope, $http
           url: '/getItalySlides'
         }).then( function(response){
           slides = response.data;
-          console.log(slides);
+          $scope.slides = slides;
+          console.log("Log from get then response in script:", slides);
+          console.log("about to run totalSlides");
+          $scope.totalSlides();
         }, function myError(response){
           console.log(response.statusText);
-        }    // end error function
-        );      // end then response
-      };      // end getItalySlides function
-    $scope.getItalySlides();
-    
+        }
+        // end error function
+        );
+        // end then response
+      };
+
+
+
+
 
 }]);
 
