@@ -2,38 +2,36 @@
       <div class="whitesection">
 
          <h1>Adventures in Design &#38; Marketing </h1>
-         <p>I began my career as a professional graphic designer and art director, working for non-profits, small agencies and freelancing.
+         <p class="introcopy2">I began my career as a professional graphic designer and art director, working for non-profits, small agencies and freelancing.
            I greatly enjoyed developing logos and corporate identity, which led me to pursue marketing.</p>
-         <p>After getting an MBA in marketing, I worked in product management and communications for companies and non-profits at which
+         <p class="introcopy2">After getting an MBA in marketing, I worked in product management and communications for companies and non-profits at which
            I was able to continue to use my design background. In my most recent position, as head of the marketing team at a small medical supplies distributor,
            I discovered my fascination with the technology used by marketing. This led me to pursue a career in software development,
            focusing on front end where I can use my design and marketing skills and experience to enrich my software development work.</p>
       </div><!-- end whitesection -->
 
-      <div class="graysection" ng-controller="modalController">
+      <div id="projects" class="graysection" ng-controller="modalCtrl as $ctrl">
 
         <h3>My Projects</h3>
            <div class="row center">
               <div class="col-md-1">
               </div>
               <div class="col-md-3">
-                 <a ng-click="toggleModal()"><img class="imageicon" ng-src="images/unimedlogoICON.png"></img></a>
+                 <div ng-click="$ctrl.unimed('lg')">
+                   <img class="imageicon" src="images/unimedlogoICON.png">
+                 </div>
                  <p class="captionhead bottomspace center">Unimed Corporation</p>
-                <modal-dialog show='modalShown' width='454px' height='500px'>
-                  <img ng-src="images/VisageSellsheet.png"></img>
-                  <p>Product Sellsheet</p>
-                </modal-dialog>
               </div>
+
               <div class="col-md-3">
-                <img class="imageicon" ng-src="images/UGSMedicalLogoICON.png"></img>
+                <div ng-click="$ctrl.ugs('lg')">
+                  <img class="imageicon" src="images/UGSMedicalLogoICON.png">
+                </div>
                 <p class="captionhead center">UGS Medical</p>
-                <modal-dialog show='modalShown' width='304px' height='500px'>
-                  <img ng-src="images/UGSMedicalVerticalBanner.png"></img>
-                  <p>Tradeshow Vertical Banner</p>
-                </modal-dialog>
               </div>
+
               <div class="col-md-3">
-                <img class="imageicon" ng-src="images/RSClogoICON.png"></img>
+                <img class="imageicon" src="images/RSClogoICON.png"></img>
                 <p class="captionhead center">Research Supply Company</p>
               </div>
               <div class="col-md-2">
@@ -44,22 +42,58 @@
               <div class="col-md-1">
               </div>
               <div class="col-md-3">
-                <img class="imageicon" ng-src="images/unimedSPRlogoICON.png"></img>
+                <img class="imageicon" src="images/unimedSPRlogoICON.png"></img>
                 <p class="captionhead center">Unimed Corp. for S.P. Richards Co.</p>
               </div>
               <div class="col-md-3">
-                <img class="imageicon" ng-src="images/unimedstapleslogoICON.png"></img>
+                <img class="imageicon" src="images/unimedstapleslogoICON.png"></img>
                 <p class="captionhead center">Unimed Corp. for Staples</p>
               </div>
               <div class="col-md-3">
-                <img class="imageicon" ng-src="images/FitInLogoICON.png"></img>
+                <img class="imageicon" src="images/FitInLogoICON.png"></img>
                 <p class="captionhead center">Fit In Fitness and Training</p>
               </div>
               <div class="col-md-2">
               </div>
           </div> <!-- end row-->
 
-        </div> <!-- end modalController -->
+<!-- MODAL SCRIPTS -->
+          <script type="text/ng-template" id="unimed.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">Unimed Corporation</h3>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="images/VisageSellsheet.png">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                <p>Product Sellsheet</p>
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Close</button>
+              </div>
+          </script>
+
+          <script type="text/ng-template" id="ugs.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">UGS Medical</h3>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="images/UGSMedicalVerticalBanner.png">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                <p>Tradeshow Vertical Banner</p>
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Close</button>
+              </div>
+          </script>
+
+
+
+
+
+
+        </div> <!-- end modalCtrl -->
 
       </div> <!-- end graysection -->
     </div>  <!-- end container -->

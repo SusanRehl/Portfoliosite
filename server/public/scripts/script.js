@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ["ngRoute", "ui.bootstrap"]);
+var myApp = angular.module("myApp", ["ngRoute", "ui.bootstrap", "ngAnimate"]);
 
 myApp.controller("homeController", ["$scope", function($scope){
     console.log("Loaded home");
@@ -14,6 +14,8 @@ myApp.controller("designController", ["$scope", function($scope){
 
 myApp.controller("hobbiesController", ["$scope", "$http", function($scope, $http){
     console.log("Loaded hobbies");
+
+    // UIB carousel
 
     $scope.myInterval = 5000;  // interval between slides
     $scope.noWrapSlides = false;  // wraps slides
@@ -44,7 +46,9 @@ myApp.controller("hobbiesController", ["$scope", "$http", function($scope, $http
         );  // end then response
       };
 
-}]);
+      //end UIB carousel
+
+}]);  // end hobbiesController
 
 myApp.controller("contactController", ["$scope", function($scope){
     console.log("Loaded contact");
@@ -60,35 +64,114 @@ myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){
 		};
 }]);
 
-//MODAL CODE
-myApp.directive('modalDialog', function() { //
-  return {
-    restrict: 'E',
-    scope: {
-      show: '='
-    },
-    replace: true,
-    transclude: true,
-    link: function(scope, element, attrs) {
-      scope.dialogStyle = {};
-      if (attrs.width)
-        scope.dialogStyle.width = attrs.width;
-      if (attrs.height)
-        scope.dialogStyle.height = attrs.height;
-      scope.hideModal = function() {
-        scope.show = false;
-      };
-    },
-    template: "<div class='ng-modal' ng-show='show'><div class='ng-modal-overlay' ng-click='hideModal()'></div><div class='ng-modal-dialog' ng-style='dialogStyle'><div class='ng-modal-close' ng-click='hideModal()'>X</div><div class='ng-modal-dialog-content' ng-transclude></div></div></div>" // See below
-  };
-}); // end app.directive
+// UIB MODAL FOR DESIGN PAGE
 
-myApp.controller("modalController", ["$scope", function($scope) {
-  $scope.modalShown = false;
-  $scope.toggleModal = function() {
-    $scope.modalShown = !$scope.modalShown;
+angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
+  var $ctrl = this;
+  $ctrl.items = ['item1', 'item2', 'item3'];
+
+  $ctrl.animationsEnabled = true;
+
+  $ctrl.unimed = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'unimed.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+  };  // end unimed
+
+  $ctrl.ugs = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'ugs.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+
+
+modalInstance.result.then(function (selectedItem) {
+    $ctrl.selected = selectedItem;
+    }, function () {
+          $log.info('Modal dismissed at: ' + new Date());
+    });
+
+};
+
+$ctrl.toggleAnimation = function () {
+    $ctrl.animationsEnabled = !$ctrl.animationsEnabled;
+    };
+
+
+}); // end modalCtrl
+
+angular.module('myApp').controller('ModalInstanceCtrl', function ($uibModalInstance, items) {
+  var $ctrl = this;
+  $ctrl.items = items;
+  $ctrl.selected = {
+    item: $ctrl.items[0]
   };
-}]); // end modalController
+
+  $ctrl.ok = function () {
+    $uibModalInstance.close($ctrl.selected.item);
+  };
+
+  $ctrl.cancel = function () {
+    $uibModalInstance.dismiss('cancel');
+  };
+}); // end ModalInstanceCtrl
+
+angular.module('myApp').component('modalComponent', {
+  templateUrl: 'myModalContent.html',
+  bindings: {
+    resolve: '<',
+    close: '&',
+    dismiss: '&'
+  },
+  controller: function () {
+    var $ctrl = this;
+
+    $ctrl.$onInit = function () {
+      $ctrl.items = $ctrl.resolve.items;
+      $ctrl.selected = {
+        item: $ctrl.items[0]
+      };
+    };
+
+    $ctrl.ok = function () {
+      $ctrl.close({$value: $ctrl.selected.item});
+    };
+
+    $ctrl.cancel = function () {
+      $ctrl.dismiss({$value: 'cancel'});
+    };
+  }
+}); // end modalComponent
+
+// end UIB Modal
+
+
+
+
+
+
+
 
 myApp.config(["$routeProvider", function($routeProvider) {   //  controller for routes
 	console.log("in scripts in config function");
