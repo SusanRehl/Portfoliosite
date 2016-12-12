@@ -198,7 +198,29 @@ li {
   border: 3px solid #cccccc;
 }
 
-/* Carousel Styling */
+
+/* Modal on Design Page */
+.designimageicon {
+  border: 3px solid #cccccc;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.designimageicon:hover {
+   transform: scale(1.1);
+}
+
+.app-modal-window .modal-dialog {
+  width: 500px;
+}
+
+.modal-body {
+  background-color: #e5e6e5;
+}
+
+
+
+/* Carousel on Hobbies Page */
 
 .carousel-indicators li {  /* hides dot style navigation buttons */
   visibility: hidden;

@@ -18,20 +18,22 @@
               </div>
               <div class="col-md-3">
                  <div ng-click="$ctrl.unimed('lg')">
-                   <img class="imageicon" src="images/unimedlogoICON.png">
+                   <img class="designimageicon" src="images/unimedlogoICON.png">
                  </div>
                  <p class="captionhead bottomspace center">Unimed Corporation</p>
               </div>
 
               <div class="col-md-3">
                 <div ng-click="$ctrl.ugs('lg')">
-                  <img class="imageicon" src="images/UGSMedicalLogoICON.png">
+                  <img class="designimageicon" src="images/UGSMedicalLogoICON.png">
                 </div>
                 <p class="captionhead center">UGS Medical</p>
               </div>
 
               <div class="col-md-3">
-                <img class="imageicon" src="images/RSClogoICON.png"></img>
+                <div ng-click="$ctrl.rsc('lg')">
+                  <img class="designimageicon" src="images/RSClogoICON.png">
+                </div>
                 <p class="captionhead center">Research Supply Company</p>
               </div>
               <div class="col-md-2">
@@ -42,15 +44,21 @@
               <div class="col-md-1">
               </div>
               <div class="col-md-3">
-                <img class="imageicon" src="images/unimedSPRlogoICON.png"></img>
+                <div ng-click="$ctrl.unimedspr('lg')">
+                  <img class="designimageicon" src="images/unimedSPRlogoICON.png">
+                </div>
                 <p class="captionhead center">Unimed Corp. for S.P. Richards Co.</p>
               </div>
               <div class="col-md-3">
-                <img class="imageicon" src="images/unimedstapleslogoICON.png"></img>
+                <div ng-click="$ctrl.unimedstaples('lg')">
+                  <img class="designimageicon" src="images/unimedstapleslogoICON.png">
+                </div>
                 <p class="captionhead center">Unimed Corp. for Staples</p>
               </div>
               <div class="col-md-3">
-                <img class="imageicon" src="images/FitInLogoICON.png"></img>
+                <div ng-click="$ctrl.fitin('lg')">
+                  <img class="designimageicon" src="images/FitInLogoICON.png">
+                </div>
                 <p class="captionhead center">Fit In Fitness and Training</p>
               </div>
               <div class="col-md-2">
@@ -60,38 +68,105 @@
 <!-- MODAL SCRIPTS -->
           <script type="text/ng-template" id="unimed.html">
               <div class="modal-header">
-                  <h3 class="modal-title" id="modal-title">Unimed Corporation</h3>
+                  <div class="modal-title" id="modal-title">
+                      <p class="captionhead">Unimed Corporation</p>
+                      <p class="caption">Medical product sellsheet, generated from database/template system I created, for distributor customers (B2B).</p>
+                  </div>
               </div>
           <!-- BODY -->
               <div class="modal-body" id="modal-body">
-                <img class="imageHeader" src="images/VisageSellsheet.png">
+                <img src="images/VisageSellsheet.png">
               </div>
           <!-- FOOTER -->
               <div class="modal-footer">
-                <p>Product Sellsheet</p>
-                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Close</button>
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
               </div>
           </script>
 
           <script type="text/ng-template" id="ugs.html">
               <div class="modal-header">
-                  <h3 class="modal-title" id="modal-title">UGS Medical</h3>
+                  <div class="modal-title" id="modal-title">
+                    <p class="captionhead">UGS Medical</p>
+                    <p class="caption">Designed and produced 8 foot tall vertical banner for tradeshows, along with booth and collateral design (B2B).</p>
+                  </div>
               </div>
           <!-- BODY -->
               <div class="modal-body" id="modal-body">
-                <img class="imageHeader" src="images/UGSMedicalVerticalBanner.png">
+                <img src="images/UGSMedicalVerticalBanner.png">
               </div>
           <!-- FOOTER -->
               <div class="modal-footer">
-                <p>Tradeshow Vertical Banner</p>
-                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Close</button>
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
               </div>
           </script>
 
+          <script type="text/ng-template" id="rsc.html">
+              <div class="modal-header">
+                  <div class="modal-title" id="modal-title">
+                    <p class="captionhead">Research Supply Company</p>
+                    <p class="caption">Corporate identity pocket folder (shown flat) for sales information, designed and produced in conjunction with full corporate identity campaign, for research lab customers (B2B).</p>
+                  </div>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img src="images/RSCPocketFolder.png">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
+              </div>
+          </script>
 
+          <script type="text/ng-template" id="unimedspr.html">
+              <div class="modal-header">
+                  <div class="modal-title" id="modal-title">
+                    <p class="captionhead">Unimed Corp. for S.P. Richards Co.</p>
+                    <p class="caption">Quarterly product promotion flyer for S.P. Richards' distributor stores, wrote, designed, and produced in customizable PDF format. Product data, with customizable fields, was on the back. (for B2B client S.P. Richards, for their B2C efforts).</p>
+                  </div>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img src="images/EndUserFlyerQ3Promo2013.png">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
+              </div>
+          </script>
 
+          <script type="text/ng-template" id="unimedstaples.html">
+              <div class="modal-header">
+                  <div class="modal-title" id="modal-title">
+                    <p class="captionhead">Unimed Corp. for Staples</p>
+                    <p class="caption">Inservice on disinfectants products for medical subsidiary of Staples. Wrote and created inservice, and presented in person and via webinar to Staples' sales representatives and customer service staff (B2B).</p>
+                  </div>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img src="images/StaplesDisinfectantInserviceCover.PNG">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
+              </div>
+          </script>
 
-
+          <script type="text/ng-template" id="fitin.html">
+              <div class="modal-header">
+                  <div class="modal-title" id="modal-title">
+                    <p class="captionhead">Fit In Fitness and Training</p>
+                    <p class="caption">Logo design for marathon and general fitness training startup, for basic corporate identity and website (B2C). </p>
+                  </div>
+              </div>
+          <!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img src="images/FitInLogo.png">
+              </div>
+          <!-- FOOTER -->
+              <div class="modal-footer">
+                  <a class="button btn" ng-click="$ctrl.ok()">Close</a>
+              </div>
+          </script>
 
         </div> <!-- end modalCtrl -->
 

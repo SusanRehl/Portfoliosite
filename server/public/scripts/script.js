@@ -80,6 +80,7 @@ angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
       templateUrl: 'unimed.html',
       controller: 'ModalInstanceCtrl',
       controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
       size: size,
       resolve: {
         items: function () {
@@ -97,6 +98,79 @@ angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
       templateUrl: 'ugs.html',
       controller: 'ModalInstanceCtrl',
       controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+   };  // end ugs
+
+  $ctrl.rsc = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'rsc.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+  };  // end rsc
+
+  $ctrl.unimedspr = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'unimedspr.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+  };// end unimed spr
+
+  $ctrl.unimedstaples = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'unimedstaples.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
+      size: size,
+      resolve: {
+        items: function () {
+          return $ctrl.items;
+        }
+      }
+    });
+  }; // end ugs
+
+  $ctrl.fitin = function (size) {
+    var modalInstance = $uibModal.open({
+      animation: $ctrl.animationsEnabled,
+      ariaLabelledBy: 'modal-title',
+      ariaDescribedBy: 'modal-body',
+      templateUrl: 'fitin.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl',
+      windowClass: 'app-modal-window',
       size: size,
       resolve: {
         items: function () {
@@ -105,14 +179,13 @@ angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
       }
     });
 
-
-modalInstance.result.then(function (selectedItem) {
-    $ctrl.selected = selectedItem;
-    }, function () {
+    modalInstance.result.then(function (selectedItem) {
+      $ctrl.selected = selectedItem;
+        }, function () {
           $log.info('Modal dismissed at: ' + new Date());
-    });
+        });
 
-};
+  }; // end fit in
 
 $ctrl.toggleAnimation = function () {
     $ctrl.animationsEnabled = !$ctrl.animationsEnabled;
@@ -165,11 +238,6 @@ angular.module('myApp').component('modalComponent', {
 }); // end modalComponent
 
 // end UIB Modal
-
-
-
-
-
 
 
 
