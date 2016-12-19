@@ -52,32 +52,6 @@ router.get('/getItalySlides', function(req, res) {  // pull selected images and 
     }); // end pg connect function
 }); // end app.get /select function
 
-
-
-// router.get( '/eventPopulate', function( req, res ) {
-//   var activeEvents = [];
-//   pg.connect( connectionString, function( err, client, done ) {
-//     var query = client.query( "SELECT * FROM events WHERE active = TRUE ORDER BY begin_date ASC" );
-//     if( err ) {
-//       console.log( "Unable to retrieve event info." );
-//     } else {
-//     query.on( 'row', function( row ) {
-//       activeEvents.push( row );
-//     });
-//     query.on( 'end', function() {
-//       return res.json( activeEvents );
-//     });
-//     done();
-//   }
-//   });
-// });
-
-
-
-
-
-
-
 // General set up //
 app.listen(app.get("port"), function(){
       console.log("Listening on port: ", app.get("port"));
