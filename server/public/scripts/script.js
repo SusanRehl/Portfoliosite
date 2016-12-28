@@ -160,7 +160,7 @@ angular.module('myApp').controller('modalCtrl', function ($uibModal, $log) {
         }
       }
     });
-  }; // end ugs
+  }; // end unimed staples
 
   $ctrl.fitin = function (size) {
     var modalInstance = $uibModal.open({
