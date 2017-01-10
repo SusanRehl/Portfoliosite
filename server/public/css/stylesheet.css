@@ -77,25 +77,40 @@ li {
   margin-top: 10px;
 }
 
-.navbar-nav.navbar-right li a {
-  text-decoration: none;
-  color: #FFF;
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #FFF;
+    list-style: none;
 }
 
-.navbar-nav.navbar-right li a:hover{
+a:hover {
   text-decoration: none;
+  font-size: 1.2em;
   color: #999999;
+  list-style: none;
 }
 
-.navbar-nav.navbar-right li a:active{
+a:active {
   text-decoration: none;
+  font-size: 1.2em;
   color: #aaddee;
+  list-style: none;
+}
+
+a:focus {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #429398;
+  list-style: none;
 }
 
 .active {
-   font-family: 'Arima Madurai', 'Times New Roman', serif;
    font-size: 1.5em;
    color: #aaddee;
+   text-decoration: none;
+   font-size: 1.2em;
+   list-style: none;
 }
 
 .adventure {
