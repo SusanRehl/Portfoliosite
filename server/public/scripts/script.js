@@ -59,7 +59,8 @@ myApp.controller("blogController", ["$scope", function($scope){
 }]);
 
 myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
-		$scope.isActive = function(route) {
+
+    $scope.isActive = function(route) {
 			return route === $location.path();
 		};
 }]);

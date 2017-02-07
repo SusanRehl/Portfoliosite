@@ -113,6 +113,19 @@ a:focus {
    list-style: none;
 }
 
+.button:hover  {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #999999;
+  list-style: none;
+}
+
+.button:hover {
+    background-color: #ac00e6;
+		cursor: pointer;
+    text-decoration: none;
+}
+
 .adventure {
   font-family: 'Arima Madurai', "Times New Roman", serif;
   font-size: 2.5em;
@@ -196,12 +209,7 @@ a:focus {
   color: #FFF;
   margin: 20px 0 10px 0;
   padding-bottom: -5px;
-}
-
-.button:hover {
-    background-color: #ac00e6;
-		cursor: pointer;
-    text-decoration: none;
+  font-size: 1.2em;
 }
 
 .icon {
