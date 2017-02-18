@@ -1,12 +1,10 @@
     <div class="container-fluid">
 
-
-
         <div class="whitesection">
 
-           <h1>Hobby Adventures</h1>
-           <p>My hobbies center around creative arts and nature. Checkout my photography, artwork, DIY projects, and of course my cats!</p>
-           <p>More content is coming!</p>
+           <h1>Photography &#38; Art</h1>
+           <p>I discovered a love of photography and painting, especially in watercolor, while pursuing my BFA in graphic design.
+             While I have done photography and illustration professionally, below are some of my personal projects, as they are my most interesting works.</p>
 
         </div><!--end whitesection-->
 
@@ -18,29 +16,26 @@
 
               <div class="row">
                   <div class="col-md-2"> <!-- col 1 empty -->
-                  <p class="bottomspace2"></p>
-                  <button class="button btn-sm rtalign" ng-click="getItalySlides()">Start Slideshow</button>
-               </div><!-- end col 1 -->
+                     <p class="bottomspace2"></p>
+                  </div><!-- end col 1 -->
 
-               <div class="col-md-8">  <!-- col 2 -->
-
-                   <p class="captionhead">Italy Adventure</p>
-                             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                               <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index" class="carouselback">
-                                 <div>
-                                   <img ng-src="{{slide.image}}" class="carouselimage">
-                                 </div>
-                                 <div class="carousel-caption">
-                                   <h4>{{slide.text}}</h4>
-                                   <h5>{{slide.id}} of {{count}}</h5>
-                                 </div>
-                               </div>  <!-- end slide -->
-                             </div> <!-- end carousel -->
-                        </div> <!-- end hobbiesController -->
-
-
-
+                  <div class="col-md-8">  <!-- col 2 -->
+                        <p class="captionhead">Memories of Italy</p>
+                        <p>Chronicles my fantastic two-week adventure in Florence, Siena, and Rome in September 2015</p>
+                        <p><button class="button btn-sm" ng-click="getItalySlides()">Start Slideshow</button></p>
+                     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                        <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index" class="carouselback">
+                           <div>
+                              <img ng-src="{{slide.image}}" class="carouselimage">
+                           </div>
+                           <div class="carousel-caption">
+                               <h4>{{slide.text}}</h4>
+                               <h5>{{slide.id}} of {{count}}</h5>
+                           </div>
+                        </div>  <!-- end slide -->
+                     </div> <!-- end carousel -->
                   </div> <!-- end col 2 -->
+              </div> <!-- end row -->
 
                   <div class="col-md-2"> <!-- col 3 empty -->
                      <p></p>
@@ -67,45 +62,5 @@
           </div> <!-- end row -->
 
         </div> <!-- end whitesection -->
-
-        <div class="graysection">
-
-          <h3>DIY Projects</h3>
-
-          <div class="row">
-              <div class="col-md-1">
-              <p></p>
-              </div>
-              <div class="col-md-4 center">
-                <p class="captionhead">Redesigned Lamp</p>
-                <img ng-src="images/lamp.png"></img>
-              </div>
-              <div class="col-md-7 vcenter">
-                <p>More content coming soon.</p>
-              </div>
-          </div> <!-- end row -->
-
-        </div> <!-- end graysection -->
-
-        <div class="whitesection">
-
-          <h3>Cats</h3>
-
-           <div class="row">
-               <div class="col-md-1">
-               <p></p>
-               </div>
-               <div class="col-md-4 center">
-                 <p class="captionhead">Anya and Tasha</p>
-                 <img ng-src="images/cats.png"></img>
-               </div>
-               <div class="col-md-7 vcenter">
-                 <p>More content coming soon.</p>
-               </div>
-           </div> <!-- end row -->
-
-        </div> <!-- end whitesection -->
-
-
 
     </div> <!-- end container -->

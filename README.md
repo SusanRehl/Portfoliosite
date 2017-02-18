@@ -1,6 +1,6 @@
-# "Adventures" Personal Portfolio Website
+# Personal Portfolio Website
 
-Personal software development and graphic design portfolio website, chronicling my learning adventures.
+Personal software development and graphic design portfolio website.
 Site was created with AngularJS, Angular UI Boostrap and Angular Routes (plus HTML5, CSS3, Bootstrap, NodeJS, Express, and PostgreSQL database).
 
 ## https://susanrehl.herokuapp.com
@@ -8,6 +8,6 @@ Site was created with AngularJS, Angular UI Boostrap and Angular Routes (plus HT
 Sections include:
 - Software development projects
 - Graphic design and marketing projects
-- Hobbies, including travel and nature photography, artwork (watercolor and acrylic painting, and drawing), and my two cats.
+- Photography, artwork (watercolor and acrylic painting, and drawing).
 
-This site is under constant development! I will continually add more content, and try out new code to create new features.
+This site is under constant development, as I try out new technologies and add new features.
