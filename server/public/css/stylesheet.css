@@ -1,10 +1,19 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Desktop/Large Screen Styles */
+
 html {
-  font-size: 16px;
+  font-size: 10px;
+  /*font-size: 16px;*/
   font-family: "Helvetica, sans-serif";
 
 }
 body {
-  font-size: 62.5%; /* 1 em = 10 px */
+  font-size: 100%;
+  /*font-size: 62.5%; */
+   /*1 em = 10 px */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -60,8 +69,23 @@ p {
   width: 65%;
 }
 
+.navbar-fixed-top, .navbar-fixed-bottom {
+   position: relative;
+}
+
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
+}
+
+
+.navbar-toggle {
+  margin: 6% 6% 0 0;
+}
+
+.icon-bar {
+  background-color: #ccc;
+  align: left;
+  margin-top: -20px;
 }
 
 li {
@@ -74,7 +98,7 @@ li {
 }
 
 .topspace {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 a {
@@ -194,7 +218,14 @@ a:focus {
 }
 
 .footer {
-  background: #6625a7;
+  background:
+       .navbar-right {
+           margin: -6% -5% 0 -8%;
+           padding: 7% 0 0 0;
+           background-color: #FBEED3;
+           border-style: solid;
+           border-color: #FBEED3 #FBEED3 #429398 #FBEED3;
+       };
   color: #FFF;
   padding: 30px 30px 10px 50px;
   font-size: .8em;
@@ -273,9 +304,61 @@ a:focus {
 }
 
 
-/* Styles for tablet */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1em;
-  }
-}
+/* TABLET / MEDIUM SCREEN STYLES ------------------------------------------------------------------------------------------- */
+
+@media screen and (max-device-width: 768px) {
+
+
+   .navbar-toggle {
+     margin: 6% 6% 0 0;
+   }
+
+   .icon-bar {
+     margin-top: -30px;
+   }
+
+   .adventure {
+     font-family: 'Arima Madurai', "Times New Roman", serif;
+     /*font-size: 2em;*/
+     color: #FFF;
+     letter-spacing: 4px;
+     text-transform: uppercase;
+     margin: 5px 0 0 -50px;
+     align: left;
+     text-align: left;
+   }
+
+    .navbar-right {
+        margin: -6% -5% 0 -8%;
+        padding: 7% 0 0 0;
+        background-color: #666;
+        border-style: solid;
+        border-color: #666 #666 #6625a7 #666;
+    }
+
+
+} /* end TABLET styles
+
+/* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
+
+@media screen and (max-device-width: 641px) {
+    body {
+       font-size: 90%;
+     }
+
+
+    .navbar-right {
+        margin: -2% -5% 0 -8%;
+        padding: 5% 0 0 0;
+    }
+
+    .navbar-toggle {
+      margin-top: 10%;
+    }
+
+    .icon-bar {
+      margin-top: -22px;
+    }
+
+
+} /* end PHONE styles

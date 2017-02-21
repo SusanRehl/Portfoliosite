@@ -60,6 +60,14 @@ myApp.controller("blogController", ["$scope", function($scope){
 
 myApp.controller("navCtrl", ["$scope", "$location", function($scope, $location){ // controller for navigation
 
+  $(document).on('click.nav','.navbar-collapse.in',function(e) {  // collapses navbar after click
+       console.log("in navCtrl on click function");
+      if( $(e.target).is('a') ) {
+        console.log("in navCtrl on click function about to change class");
+          $(this).removeClass('in').addClass('collapse');
+      }
+  });
+
     $scope.isActive = function(route) {
 			return route === $location.path();
 		};

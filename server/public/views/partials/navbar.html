@@ -1,19 +1,29 @@
-
-    <nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
       <div class="container-fluid navbarcolor">
-        <ul>
-          <li class="navbar-brand adventure">Portfolio</li>
-        </ul>
-        <div ng-controller="navCtrl">
-        <ul class="navbar-nav navbar-right topspace" > <!-- one line, flush right -->
+           <div class="logo">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
 
-          <li class="mynav"><a ng-class="{ active: isActive('/home') }" href='#/home'>Home</a></li>
-          <li class="mynav"><a ng-class="{ active: isActive('/coding') }" href='#/coding'>Coding</a></li>
-          <li class="mynav"><a ng-class="{ active: isActive('/design') }" href='#/design'>Design &#38; Marketing</a></li>
-          <li class="mynav"><a ng-class="{ active: isActive('/hobbies') }" href='#/hobbies'>Photos &#38; Art</a></li>
-          <li class="mynav"><a ng-class="{ active: isActive('/contact') }" href='#/contact'>Contact</a></li>
+            <ul>
+              <li class="navbar-brand adventure">Portfolio</li>
+            </ul>
+          </div>  <!--end logo div -->
 
-          <!-- <li><a class="mynav" href="#blog">Blog</a></li> -->
-        </div> <!-- end controller navCtrl -->
-      </div><!--end container-fluid  -->
-     </nav>  <!-- end nav bar -->
+          <div ng-controller="navCtrl">
+            <div class="collapse navbar-collapse">
+               <ul class="navbar-nav navbar-right topspace" > <!-- one line, flush right -->
+
+                 <li class="mynav"><a ng-class="{ active: isActive('/home') }" href='#/home'>Home</a></li>
+                 <li class="mynav"><a ng-class="{ active: isActive('/coding') }" href='#/coding'>Coding</a></li>
+                 <li class="mynav"><a ng-class="{ active: isActive('/design') }" href='#/design'>Design &#38; Marketing</a></li>
+                 <li class="mynav"><a ng-class="{ active: isActive('/hobbies') }" href='#/hobbies'>Photos &#38; Art</a></li>
+                 <li class="mynav"><a ng-class="{ active: isActive('/contact') }" href='#/contact'>Contact</a></li>
+                 <!-- <li><a class="mynav" href="#blog">Blog</a></li> -->
+               </ul>
+            </div>  <!-- end navbar-collapse -->
+          </div> <!-- end controller navCtrl -->
+    </div>  <!--end container-fluid  -->
+   </nav>  <!-- end nav bar -->
