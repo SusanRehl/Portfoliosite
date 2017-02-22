@@ -6,14 +6,11 @@
 
 html {
   font-size: 10px;
-  /*font-size: 16px;*/
   font-family: "Helvetica, sans-serif";
 
 }
 body {
   font-size: 100%;
-  /*font-size: 62.5%; */
-   /*1 em = 10 px */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -53,10 +50,6 @@ p {
   font-size: 1.4em;
 }
 
-.container-fluid {
-  width: 100%;
-}
-
 .intro {
   padding: 75px 50px 25px 70px;
 }
@@ -76,7 +69,6 @@ p {
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
 }
-
 
 .navbar-toggle {
   margin: 6% 6% 0 0;
@@ -130,11 +122,18 @@ a:focus {
 }
 
 .active {
-   font-size: 1.5em;
    color: #aaddee;
    text-decoration: none;
    font-size: 1.2em;
    list-style: none;
+}
+
+.button {
+  background-color: #6625a7;
+  color: #FFF;
+  margin: 20px 0 10px 0;
+  padding-bottom: -5px;
+  font-size: 1.2em;
 }
 
 .button:hover  {
@@ -142,12 +141,8 @@ a:focus {
   font-size: 1.2em;
   color: #999999;
   list-style: none;
-}
-
-.button:hover {
-    background-color: #ac00e6;
-		cursor: pointer;
-    text-decoration: none;
+  background-color: #ac00e6;
+	cursor: pointer;
 }
 
 .adventure {
@@ -218,25 +213,10 @@ a:focus {
 }
 
 .footer {
-  background:
-       .navbar-right {
-           margin: -6% -5% 0 -8%;
-           padding: 7% 0 0 0;
-           background-color: #FBEED3;
-           border-style: solid;
-           border-color: #FBEED3 #FBEED3 #429398 #FBEED3;
-       };
+  background-color: #6625a7;
   color: #FFF;
   padding: 30px 30px 10px 50px;
   font-size: .8em;
-}
-
-.button {
-  background-color: #6625a7;
-  color: #FFF;
-  margin: 20px 0 10px 0;
-  padding-bottom: -5px;
-  font-size: 1.2em;
 }
 
 .icon {
@@ -270,7 +250,7 @@ a:focus {
 
 
 
-/* Carousel on Hobbies Page */
+/* Carousel on Photos and Art Page */
 
 .carousel-indicators li {  /* hides dot style navigation buttons */
   visibility: hidden;
@@ -308,6 +288,17 @@ a:focus {
 
 @media screen and (max-device-width: 768px) {
 
+   h1 {
+    font-size: 2.5em;
+   }
+
+   h2 {
+     font-size: 2.2em;
+   }
+
+   h3 {
+     font-size: 2em;
+   }
 
    .navbar-toggle {
      margin: 6% 6% 0 0;
@@ -319,21 +310,24 @@ a:focus {
 
    .adventure {
      font-family: 'Arima Madurai', "Times New Roman", serif;
-     /*font-size: 2em;*/
+     font-size: 2.5em;
      color: #FFF;
      letter-spacing: 4px;
      text-transform: uppercase;
-     margin: 5px 0 0 -50px;
+     margin: 5px 0 0 -20px;
      align: left;
      text-align: left;
    }
 
-    .navbar-right {
-        margin: -6% -5% 0 -8%;
-        padding: 7% 0 0 0;
+   .navbar-right {
+        margin: -5% 0 0 -10%;
+        padding: 7% 0 3% 10%;
         background-color: #666;
-        border-style: solid;
-        border-color: #666 #666 #6625a7 #666;
+        width: 55%;
+    }
+
+    .mynav {
+      padding-bottom: 6%;
     }
 
 
@@ -342,10 +336,6 @@ a:focus {
 /* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
 @media screen and (max-device-width: 641px) {
-    body {
-       font-size: 90%;
-     }
-
 
     .navbar-right {
         margin: -2% -5% 0 -8%;
