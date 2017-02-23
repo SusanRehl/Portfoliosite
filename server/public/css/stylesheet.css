@@ -12,12 +12,12 @@ html {
 body {
   font-size: 100%;
   font-family: 'Raleway', sans-serif;
+  padding: 50px 0 0 0;
 }
 
 h1 {
   font-family: 'Arima Madurai', 'Times New Roman', serif;
   font-size: 3em;
-  margin-top: 70px;
 }
 
 h2 {
@@ -51,7 +51,7 @@ p {
 }
 
 .intro {
-  padding: 75px 50px 25px 70px;
+  padding: 40px 50px 25px 70px;
 }
 
 .introcopy {
@@ -63,13 +63,11 @@ p {
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
-   /*position: relative;*/
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
 }
-
 
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
@@ -168,7 +166,7 @@ a:focus {
 }
 
 .whitesection {
-  padding: 10px 70px 25px 70px;
+  padding: 20px 70px 25px 70px;
 }
 
 .whitesection h3 {
