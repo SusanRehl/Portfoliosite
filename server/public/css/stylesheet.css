@@ -63,8 +63,13 @@ p {
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
-   position: relative;
+   /*position: relative;*/
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
+
 
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
