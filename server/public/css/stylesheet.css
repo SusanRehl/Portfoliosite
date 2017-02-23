@@ -68,6 +68,7 @@ p {
 
 .navbarcolor {
   background: linear-gradient(to right, #e6002e, #6625a7);
+  width: auto;
 }
 
 .navbar-toggle {
@@ -90,7 +91,7 @@ li {
 }
 
 .topspace {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 a {
@@ -152,6 +153,7 @@ a:focus {
   letter-spacing: 15px;
   text-transform: uppercase;
   margin-top: 5px;
+  padding-left: 6%;
 }
 
 .graysection {
@@ -314,22 +316,21 @@ a:focus {
      color: #FFF;
      letter-spacing: 4px;
      text-transform: uppercase;
-     margin: 5px 0 0 -20px;
+     margin: 5px 0 0 0;
      align: left;
      text-align: left;
    }
 
    .navbar-right {
-        margin: -5% 0 0 -10%;
+        margin: -5% 0 0 15%;
         padding: 7% 0 3% 10%;
         background-color: #666;
         width: 55%;
     }
 
     .mynav {
-      padding-bottom: 6%;
+      padding: 3% 0;
     }
-
 
 } /* end TABLET styles
 
@@ -338,16 +339,34 @@ a:focus {
 @media screen and (max-device-width: 641px) {
 
     .navbar-right {
-        margin: -2% -5% 0 -8%;
-        padding: 5% 0 0 0;
+        margin: 0 0 0 0;
+        padding: 5% 0 5% 3%;
+    }
+
+    .navbar-collapse {
+        margin: auto 0;
+        float: left;
+        padding: -50px 0 0 2px;
+        background-color: #666;
+        width: 100vw;
     }
 
     .navbar-toggle {
-      margin-top: 10%;
+      margin-top: 5px;
+      padding-top: 10%;
     }
 
     .icon-bar {
       margin-top: -22px;
+    }
+
+    .adventure {
+      margin-left: 0;
+    }
+
+    .mynav {
+      padding: 10% 0;
+      width: 200px;
     }
 
 
