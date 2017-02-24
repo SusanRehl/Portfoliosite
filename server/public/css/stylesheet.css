@@ -191,14 +191,6 @@ a:focus {
   text-align: center;
 }
 
-.leftspace {
-  margin-left: 20px;
-}
-
-.rightspace {
-  margin-right: 20px;
-}
-
 .bottomspace {
   margin-bottom: 40px;
 }
@@ -293,6 +285,10 @@ a:focus {
 
 @media screen and (max-device-width: 768px) {
 
+   .navbar {
+     width: 767px;
+   }
+
    h1 {
     font-size: 2.5em;
    }
@@ -303,6 +299,10 @@ a:focus {
 
    h3 {
      font-size: 2em;
+   }
+
+   img {
+     margin-bottom: 2%;
    }
 
    .navbar-toggle {
@@ -335,11 +335,33 @@ a:focus {
       padding: 3% 0;
     }
 
+    .introcopy {
+      margin: 3%;
+    }
+
+    .graysection {
+      margin: 0 -15px;
+      padding: 3% 0;
+    }
+
+    .rightspace .leftspace {
+      right-margin: 0;
+      text-align: center;
+    }
+
 } /* end TABLET styles
 
 /* PHONE / SMALL SCREEN STYLES  -------------------------------------------------------------------------------------- */
 
 @media screen and (max-device-width: 641px) {
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .navbar {
+      width: 100vw;
+    }
 
     .navbar-right {
         margin: 0 0 0 0;
@@ -369,7 +391,29 @@ a:focus {
 
     .mynav {
       padding: 10% 0;
-      width: 200px;
+      /*width: 200px;*/
+    }
+
+    .intro {
+      padding: 10% 3% 3% 3%;
+      /*width: 100vw;*/
+      margin: 0;
+    }
+
+    .leftspace {
+      padding: 0 10% 0 25%;
+    }
+
+    .graysection {
+      margin: 0 -15px;
+      padding: 3%;
+    }
+
+    .codingpix {
+      height: auto;
+      width: auto;
+      max-width: 250px;
+      max-height: 250px;
     }
 
 
