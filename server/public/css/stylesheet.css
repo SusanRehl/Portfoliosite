@@ -245,6 +245,10 @@ a:focus {
   background-color: #e5e6e5;
 }
 
+/*.mobilepopup {
+  visibility: hidden;
+}*/
+
 
 
 /* Carousel on Photos and Art Page */
@@ -467,6 +471,22 @@ a:focus {
     .whitesection {
       padding-top: 10%;
     }
+
+    .app-modal-window .modal-dialog {
+      width: 300px;
+    }
+
+    .modal-body img {
+      height: auto;
+      width: auto;
+      max-width: 250px;
+      max-height: 350px;
+    }
+
+    /*.mobilepopup {
+      margin-left: 3%;
+      visibility: visible;;
+    }*/
 
 
 } /* end PHONE styles
