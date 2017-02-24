@@ -299,6 +299,7 @@ a:focus {
 
    h3 {
      font-size: 2em;
+     margin-left: 3%;
    }
 
    img {
@@ -339,15 +340,62 @@ a:focus {
       margin: 3%;
     }
 
+    .whitesection {
+      padding: 6% 4% 4% 4%;
+    }
+
     .graysection {
       margin: 0 -15px;
-      padding: 3% 0;
+      padding: 3%;
     }
 
     .rightspace .leftspace {
       right-margin: 0;
       text-align: center;
     }
+
+    .indent {
+       padding-left: 9%;
+    }
+
+    .captionhead {
+      margin: 0 0 2% 3%;
+    }
+
+    .slideshowdescription {
+      margin-left: 3%;
+    }
+
+    .bottomspace {
+      margin: 5% 0 4% 0;
+    }
+
+    .vcenter {
+      height: 70px;
+      line-height: 20px;
+    }
+
+    .carousel-control {  /* made space around arrows narrower */
+      width: 30px;
+    }
+
+    .carousel {   /* made entire carousel narrower*/
+      width: 300px;
+      min-height: 250px;
+      background-color: #000;
+    }
+
+    .carouselimage {  /* aligns image vertically with caption */
+      max-height: 200px;
+      margin: 15px auto 50px auto;
+      padding-bottom: 40px;
+    }
+
+    .carousel-caption {   /* moves caption to underneath photo - default is on top of photo */
+      margin: -25px -25px -50px -25px;
+      padding: -250px 0 0 0;
+    }
+
 
 } /* end TABLET styles
 
@@ -414,6 +462,10 @@ a:focus {
       width: auto;
       max-width: 250px;
       max-height: 250px;
+    }
+
+    .whitesection {
+      padding-top: 10%;
     }
 
 

@@ -21,9 +21,9 @@
 
                   <div class="col-md-8">  <!-- col 2 -->
                         <p class="captionhead">Memories of Italy</p>
-                        <p>Chronicles my fantastic two-week adventure in Florence, Siena, and Rome in September 2015</p>
-                        <p><button class="button btn-sm" ng-click="getItalySlides()">Start Slideshow</button></p>
-                     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                        <p class="slideshowdescription">Chronicles my fantastic two-week adventure in Florence, Siena, and Rome in September 2015</p>
+                        <p class="slideshowdescription"><button class="button btn-sm" ng-click="getItalySlides()">Start Slideshow</button></p>
+                     <div class="slideshowdescription" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                         <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index" class="carouselback">
                            <div>
                               <img ng-src="{{slide.image}}" class="carouselimage">
@@ -54,7 +54,7 @@
               </div>
               <div class="col-md-4 center">
                 <p class="captionhead">Watercolor Mandala</p>
-                <img ng-src="images/treemandala.png"></img>
+                <img class="codingpix" ng-src="images/treemandala.png"></img>
               </div>
               <div class="col-md-7 vcenter">
                 <p>More content coming soon.</p>
