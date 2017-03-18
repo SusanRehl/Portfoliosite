@@ -1,14 +1,14 @@
-    <div class="container-fluid">
+<main class="container-fluid">
 
-        <div class="whitesection">
+        <header class="whitesection">
 
            <h1>Photography &#38; Art</h1>
            <p>I discovered a love of photography and painting, especially in watercolor, while pursuing my BFA in graphic design.
              While I have done photography and illustration professionally, below are some of my personal projects, as they are my most interesting works.</p>
 
-        </div><!--end whitesection-->
+        </header><!--end whitesection-->
 
-        <div class="graysection">
+        <section class="graysection">
 
           <h3>Photography</h3>
 
@@ -16,7 +16,6 @@
 
               <div class="row">
                   <div class="col-md-2"> <!-- col 1 empty -->
-                     <p class="bottomspace2"></p>
                   </div><!-- end col 1 -->
 
                   <div class="col-md-8">  <!-- col 2 -->
@@ -25,13 +24,13 @@
                         <p class="slideshowdescription"><button class="button btn-sm" ng-click="getItalySlides()">Start Slideshow</button></p>
                      <div class="slideshowdescription" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                         <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index" class="carouselback">
-                           <div>
-                              <img ng-src="{{slide.image}}" class="carouselimage">
-                           </div>
-                           <div class="carousel-caption">
-                               <h4>{{slide.text}}</h4>
-                               <h5>{{slide.id}} of {{count}}</h5>
-                           </div>
+                             <figure>
+                                <img ng-src="{{slide.image}}" alt="Italy Slideshow" class="carouselimage">
+                                <figcaption class="carousel-caption">
+                                   <h4>{{slide.text}}</h4>
+                                   <h5>{{slide.id}} of {{count}}</h5>
+                                </figcaption>
+                             </figure>
                         </div>  <!-- end slide -->
                      </div> <!-- end carousel -->
                   </div> <!-- end col 2 -->
@@ -42,9 +41,9 @@
                   </div><!-- end col 3 -->
            </div> <!-- end row -->
 
-        </div> <!-- end graysection -->
+        </section> <!-- end graysection -->
 
-        <div class="whitesection">
+        <section class="whitesection">
 
           <h3>Art</h3>
 
@@ -54,13 +53,15 @@
               </div>
               <div class="col-md-4 center">
                 <p class="captionhead">Watercolor Mandala</p>
-                <img class="codingpix" ng-src="images/treemandala.png"></img>
+                <figure>
+                   <img class="codingpix" alt="Tree Mandala Watercolor" ng-src="images/treemandala.png"></img>
+                 </figure>
               </div>
               <div class="col-md-7 vcenter">
                 <p>More content coming soon.</p>
               </div>
           </div> <!-- end row -->
 
-        </div> <!-- end whitesection -->
+        </section> <!-- end whitesection -->
 
-    </div> <!-- end container -->
+</main> <!-- end container -->

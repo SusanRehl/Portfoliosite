@@ -1,5 +1,5 @@
-    <div class="container-fluid">
-      <div class="whitesection">
+<main class="container-fluid">
+      <header class="whitesection">
 
          <h1>Design &#38; Marketing </h1>
          <p class="introcopy2">I began my career as a professional graphic designer and art director, working for non-profits, small agencies and freelancing.
@@ -8,9 +8,9 @@
            I was able to continue to use my design background. In my most recent position, as head of the marketing team at a small medical supplies distributor,
            I discovered my fascination with the technology used by marketing. This led me to pursue a career in software development,
            focusing on front end where I can use my design and marketing skills and experience to enrich my software development work.</p>
-      </div><!-- end whitesection -->
+      </header><!-- end whitesection -->
 
-      <div id="projects" class="graysection" ng-controller="modalCtrl as $ctrl">
+      <section id="projects" class="graysection" ng-controller="modalCtrl as $ctrl">
 
         <h3>My Projects</h3>
            <div class="row center">
@@ -18,21 +18,27 @@
               </div>
               <div class="col-md-3">
                  <div ng-click="$ctrl.unimed('lg')">
-                   <img class="designimageicon" src="images/unimedlogoICON.png">
+                   <figure>
+                      <img class="designimageicon" alt="Unimed logo" src="images/unimedlogoICON.png">
+                   </figure>
                  </div>
                  <p class="captionhead bottomspace center">Unimed Corporation</p>
               </div>
 
               <div class="col-md-3">
                 <div ng-click="$ctrl.ugs('lg')">
-                  <img class="designimageicon" src="images/UGSMedicalLogoICON.png">
+                  <figure>
+                     <img class="designimageicon" alt="UGS Medical logo" src="images/UGSMedicalLogoICON.png">
+                  </figure>
                 </div>
                 <p class="captionhead center">UGS Medical</p>
               </div>
 
               <div class="col-md-3">
                 <div ng-click="$ctrl.rsc('lg')">
-                  <img class="designimageicon" src="images/RSClogoICON.png">
+                  <figure>
+                     <img class="designimageicon" alt="RSC logo" src="images/RSClogoICON.png">
+                  </figure>
                 </div>
                 <p class="captionhead center">Research Supply Company</p>
               </div>
@@ -45,19 +51,25 @@
               </div>
               <div class="col-md-3">
                 <div ng-click="$ctrl.unimedspr('lg')">
-                  <img class="designimageicon" src="images/unimedSPRlogoICON.png">
+                  <figure>
+                     <img class="designimageicon" alt="Unimed and SP Richards graphic" src="images/unimedSPRlogoICON.png">
+                   </figure>
                 </div>
                 <p class="captionhead center">Unimed Corp. for S.P. Richards Co.</p>
               </div>
               <div class="col-md-3">
                 <div ng-click="$ctrl.unimedstaples('lg')">
-                  <img class="designimageicon" src="images/unimedstapleslogoICON.png">
+                  <figure>
+                     <img class="designimageicon" alt="Unimed and Staples graphic" src="images/unimedstapleslogoICON.png">
+                   </figure>
                 </div>
                 <p class="captionhead center">Unimed Corp. for Staples</p>
               </div>
               <div class="col-md-3">
                 <div ng-click="$ctrl.fitin('lg')">
-                  <img class="designimageicon" src="images/FitInLogoICON.png">
+                  <figure>
+                     <img class="designimageicon" alt="FitInFitness logo" src="images/FitInLogoICON.png">
+                   </figure>
                 </div>
                 <p class="captionhead center">Fit In Fitness and Training</p>
               </div>
@@ -169,7 +181,8 @@
           </script>
 
 
-        </div> <!-- end modalCtrl -->
+        <!-- </div>  -->
+        <!-- end modalCtrl -->
 
-      </div> <!-- end graysection -->
-    </div>  <!-- end container -->
+      </section> <!-- end graysection -->
+    </main>  <!-- end container -->

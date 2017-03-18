@@ -1,11 +1,13 @@
       <div ng-controller = "homeController">
 
-        <div class = "container-fluid">
+        <main class = "container-fluid">
 
-              <div class="intro">
+              <header class="intro">
                 <div class = "row">
                   <div class="col-md-2 col-xs-4">
+                    <figure>
                      <img ng-src="/images/susanrehl.png" alt="Susan Rehl picture"></img>
+                   </figure>
                   </div>  <!-- end col -->
                   <div class="col-md-10 col-xs-8 leftspace">
                     <h1>Susan Rehl, Software Developer</h1>
@@ -13,19 +15,23 @@
                     <p>Check out my projects, and send me your feedback on the Contact page!</p>
                   </div> <!-- end col -->
                   </div> <!-- end row-->
-              </div>  <!-- end intro section-->
+              </header>  <!-- end intro section-->
 
-              <div class="graysection">
+              <section class="graysection">
                 <h2 class="center">Coding</h2>
                 <p class="introcopy">I work in JavaScript, jQuery, AngularJS, Angular2, Angular Material 2, Typescript, Covalent, NodeJS, Express.js, SQL, HTML5, CSS3, Flexbox, and Bootstrap. Of course, I'm always learning new technologies and tools. Check out my work!</p>
                 <div class="row">
                     <div class="col-md-2">
                     </div>
                     <div class="col-md-4 center">
-                      <img class="codingpix" ng-src="images/maliascreenshot.png"></img>
+                      <figure>
+                      <img class="codingpix" alt="Malia website screenshot" ng-src="images/maliascreenshot.png"></img>
+                    </figure>
                     </div> <!-- end col-->
                     <div class="col-md-4 center">
-                      <img class="codingpix" ng-src="images/monumentalmuffins.jpg"></img>
+                      <figure>
+                      <img class="codingpix" alt="Monumental Muffins website screenshot composite" ng-src="images/monumentalmuffins.jpg"></img>
+                    </figure>
                     </div>
                     <div class="col-md-2">
                     </div>  <!-- end col-->
@@ -33,9 +39,9 @@
                   <div class="center">
                     <a href="#coding" class="button btn">Check out my projects</a>
                   </div>
-              </div> <!-- end coding section-->
+              </section> <!-- end coding section-->
 
-              <div class="whitesection">
+              <section class="whitesection">
                 <h2 class="center">Design and Marketing</h2>
                 <p class="introcopy">Before my software engineering career, I was a marketer and graphic designer.
                   I have worked for a variety of businesses, including a medical supplies distributor, an electrical engineering firm,
@@ -48,16 +54,24 @@
                       <p></p>
                     </div> <!-- end col-->
                     <div class="col-md-2 center">
-                      <img class="imageicon" ng-src="images/unimedlogoICON.png"></img>
+                      <figure>
+                      <img class="imageicon" alt="Unimed logo" ng-src="images/unimedlogoICON.png"></img>
+                      </figure>
                     </div>  <!-- end col-->
                     <div class="col-md-2 center">
-                      <img class="imageicon" ng-src="images/UGSMedicalLogoICON.png"></img>
+                      <figure>
+                      <img class="imageicon" alt="UGS Medical logo" ng-src="images/UGSMedicalLogoICON.png"></img>
+                      </figure>
                     </div>  <!-- end col-->
                     <div class="col-md-2 center">
-                      <img class="imageicon" ng-src="images/RSClogoICON.png"></img>
+                      <figure>
+                      <img class="imageicon" alt="RSC logo" ng-src="images/RSClogoICON.png"></img>
+                      </figure>
                     </div> <!-- end col-->
                     <div class="col-md-2 center">
-                      <img class="imageicon" ng-src="images/FitInLogoICON.png"></img>
+                      <figure>
+                      <img class="imageicon" alt="FitInFitness logo"ng-src="images/FitInLogoICON.png"></img>
+                      </figure>
                     </div>  <!-- end col-->
                     <div class="col-md-2 center">
                       <p></p>
@@ -66,9 +80,9 @@
                   <div class="center">
                     <a href="#design" class="button btn">Check out my design</a>
                   </div>
-              </div> <!-- end design section-->
+              </section> <!-- end design section-->
 
-              <div class="graysection">
+              <section class="graysection">
                 <h2 class="center">Photography and Art</h2>
                 <p class="introcopy">I've done photography and illustration professionally during my marketing and graphic design careers,
                   and worked extensively with Adobe Creative Suite, especially Photoshop, Illustrator and InDesign.
@@ -78,12 +92,16 @@
                       <p></p>
                     </div> <!-- end col-->
                     <div class="col-md-4 center">
-                      <img ng-src="images/FlorenceIcon.png"></img>
-                      <p class="captionhead">Photography</p>
+                      <figure>
+                        <img alt="Florence, Italy" ng-src="images/FlorenceIcon.png"></img>
+                        <figcaption class="captionhead">Photography</figcaption>
+                      </figure>
                     </div>  <!-- end col-->
                     <div class="col-md-4 center">
-                      <img ng-src="images/treemandalaICON.png"></img>
-                      <p class="captionhead">Art</p>
+                      <figure>
+                         <img alt="Tree Mandala watercolor" ng-src="images/treemandalaICON.png"></img>
+                         <figcaption class="captionhead">Art</figcaption>
+                       </figure>
                     </div>  <!-- end col-->
                     <div class="col-md-2 center">
                       <p></p>
@@ -92,8 +110,8 @@
                   <div class="center">
                     <a href="#hobbies" class="button btn">Check out my photos &#38; art</a>
                   </div>
-              </div> <!-- end art section-->
+              </section> <!-- end art section-->
 
-      </div> <!-- end container-fluid -->
+      </main> <!-- end container-fluid -->
 
     </div> <!-- end controller  -->
