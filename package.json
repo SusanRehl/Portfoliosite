@@ -1,6 +1,9 @@
 {
   "name": "portfoliosite",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "description": "personal portfolio site",
   "main": "index.js",
   "scripts": {
